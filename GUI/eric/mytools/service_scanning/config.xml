@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+    <!-- 需要监控的服务名称列表 -->
+    <services>
+        <item>Apache2.2</item>
+        <item>MySQL571</item>
+        <!--<item>MySQL571</item>-->
+    </services>
+    <!-- 间隔时间(单位秒) -->
+    <time>10</time>
+</config>

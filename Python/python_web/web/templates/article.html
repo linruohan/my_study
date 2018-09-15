@@ -1,0 +1,17 @@
+$def with (r)
+
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>article</title>
+    </head>
+    <body>
+        <h1>articles list</h1>
+        <ul>
+        $for x in r:
+            <li>$x.get('id') => $x.get('name')</li>
+        </ul>
+    </body>
+
+</html>

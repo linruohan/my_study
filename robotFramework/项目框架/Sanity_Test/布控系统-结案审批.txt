@@ -1,0 +1,43 @@
+*** Settings ***
+Suite Setup       login
+Suite Teardown    logout
+Test Setup
+Test Teardown     进入主界面
+Resource          ../share_resourse.txt
+
+*** Test Cases ***
+确认结案
+    进入系统模块    xpath=//*[@id="menu_1305030918504367a63fdc4d5033ea81"]/p/a
+    进入子菜单模块    xpath=//*[@id="1306261142379846a89c90552a5a5211"]/a
+    ${carplatenum}    Set Variable    陕___721
+    进入frame    id=content-frame
+    文本框输入    carPlateNum    ${carplatenum}
+    Select From List By Value    carPlateColorCode    2    #蓝色
+    点击按钮    xpath=//*[@id="content_body"]/div[2]/div[1]/form/table/tbody/tr[2]/td[6]/input[1]
+    sleep    2
+    ${platenum}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[2]
+    ${num0}    获取元素文本数值    xpath=//*[@id="content_body"]/div[2]/div[2]/div[2]/div[2]/b[3]
+    Run Keyword If    "${platenum}"=="${carplatenum}"     log    查询成功
+    #校验
+    点击元素    xpath=//*[@id="tbody"]/tr[1]/td[1]/input
+    点击按钮    xpath=//*[@id="content_body"]/div[2]/div[2]/div[1]/div[1]/button
+    Handle Alert
+    退出frame
+    进入frame    id=content-frame
+    点击按钮    xpath=//*[@id="content_body"]/div[3]/div[1]/form/table/tbody/tr[2]/td[6]/input[1]
+    ${num}    获取元素文本数值    xpath=//*[@id="content_body"]/div[2]/div[2]/div[2]/div[2]/b[3]
+    验证数值减1    ${num0}    ${num}    #结案成功
+    log    结案成功
+
+查询
+    进入系统模块    xpath=//*[@id="menu_1305030918504367a63fdc4d5033ea81"]/p/a
+    进入子菜单模块    xpath=//*[@id="1306261142379846a89c90552a5a5211"]/a
+    ${carplatenum}    Set Variable    陕___721
+    进入frame    id=content-frame
+    文本框输入    carPlateNum    ${carplatenum}
+    Select From List By Value    carPlateColorCode    2    #蓝色
+    点击按钮    xpath=//*[@id="content_body"]/div[2]/div[1]/form/table/tbody/tr[2]/td[6]/input[1]
+    sleep    2
+    ${platenum}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[2]
+    ${num}    获取元素文本数值    xpath=//*[@id="content_body"]/div[2]/div[2]/div[2]/div[2]/b[3]
+    Run Keyword If    "${platenum}"=="${carplatenum}" and ${num}==1    log    查询成功

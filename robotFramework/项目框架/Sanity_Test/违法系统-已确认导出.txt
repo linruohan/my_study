@@ -1,0 +1,137 @@
+*** Settings ***
+Suite Setup       login
+Suite Teardown    logout
+Test Setup
+Test Teardown     进入主界面
+Resource          ../share_resourse.txt
+
+*** Test Cases ***
+导出查询
+    [Documentation]    "${chepai}"=="陕CJ7216" and "${platecolor}"=="蓝色" and "${viocode}"=="6666" and "${direction}"=="由西向东" and "${status_export}"=="未导出"
+    进入系统模块    xpath=//*[@id="menu_130619095023993fa6f0e33461840c4b"]/p/a
+    进入子菜单模块    xpath=//*[@id="130620104105892890d33170b303519e"]/a
+    进入frame    id=content-frame
+    文本框输入    plateNumber    陕CJ7216
+    #违法代码
+    点击元素    vioType
+    进入frame    id=jbox-iframe
+    文本框输入    id=code    6666
+    点击按钮    xpath=//*[@id="content_body"]/div[3]/div[1]/form/table/tbody/tr/td[5]/input[1]
+    sleep    1
+    点击元素    xpath=//*[@id="tbody"]/tr[1]/td[1]/input
+    退出frame
+    进入frame    id=content-frame
+    点击按钮    xpath=//*[@id="jbox-state-state0"]/div[2]/button
+    #违法代码
+    Select From List By Value    carNumColorCode    2    #蓝色
+    输入日期    startTime    2017-12-01 13:56:12
+    输入日期    endTime    2018-03-15 15:38:50
+    点击元素    id=text_search_devNames
+    进入frame    name=jbox-iframe
+    点击按钮    id=qx    #全部道路
+    Comment    点击元素    xpath=//*[@id="all"]/li[6]/input    #单个道路
+    退出frame
+    进入frame    id=content-frame
+    点击按钮    xpath=//*[@id="jbox-state-state0"]/div[2]/button
+    Select From List By Value    id=localcar    1    #外地车
+    Select From List By Value    id=directions    02    #由西向东
+    Select From List By Value    id=select_isExport    0    #未导出
+    点击按钮    xpath=//*[@id="search_table"]/tbody/tr[2]/td[9]/input[1]
+    sleep    4
+    ${chepai}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[2]
+    ${platecolor}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[4]
+    ${viocode}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[5]
+    ${direction}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[9]
+    ${status_export}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[11]/font
+    Run Keyword If    "${chepai}"=="陕CJ7216" and "${platecolor}"=="蓝色" and "${viocode}"=="6666" and "${direction}"=="由西向东" and "${status_export}"=="未导出"    log    查询成功
+    Capture Page Screenshot
+
+导出文本
+    进入系统模块    xpath=//*[@id="menu_130619095023993fa6f0e33461840c4b"]/p/a
+    进入子菜单模块    xpath=//*[@id="130620104105892890d33170b303519e"]/a
+    进入frame    id=content-frame
+    文本框输入    plateNumber    陕CJ7216
+    #违法代码
+    点击元素    vioType
+    进入frame    id=jbox-iframe
+    文本框输入    id=code    6666
+    点击按钮    xpath=//*[@id="content_body"]/div[3]/div[1]/form/table/tbody/tr/td[5]/input[1]
+    sleep    1
+    点击元素    xpath=//*[@id="tbody"]/tr[1]/td[1]/input
+    退出frame
+    进入frame    id=content-frame
+    点击按钮    xpath=//*[@id="jbox-state-state0"]/div[2]/button
+    #违法代码
+    Select From List By Value    carNumColorCode    2    #蓝色
+    输入日期    startTime    2017-12-01 13:56:12
+    输入日期    endTime    2018-03-15 15:38:50
+    点击元素    id=text_search_devNames
+    进入frame    name=jbox-iframe
+    点击按钮    id=qx    #全部道路
+    Comment    点击元素    xpath=//*[@id="all"]/li[6]/input    #单个道路
+    退出frame
+    进入frame    id=content-frame
+    点击按钮    xpath=//*[@id="jbox-state-state0"]/div[2]/button
+    Select From List By Value    id=localcar    1    #外地车
+    Select From List By Value    id=directions    02    #由西向东
+    Select From List By Value    id=select_isExport    0    #未导出
+    点击按钮    xpath=//*[@id="search_table"]/tbody/tr[2]/td[9]/input[1]
+    sleep    4
+    ${chepai}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[2]
+    ${platecolor}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[4]
+    ${viocode}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[5]
+    ${direction}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[9]
+    ${status_export}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[11]/font
+    Run Keyword If    "${chepai}"=="陕CJ7216" and "${platecolor}"=="蓝色" and "${viocode}"=="6666" and "${direction}"=="由西向东" and "${status_export}"=="未导出"    log    查询成功
+    Capture Page Screenshot
+    #开始导出文本
+    ${num}    获取元素文本数值    xpath=//*[@id="result-table"]/div[2]/b[3]
+    点击按钮    exportexcel-btn
+    ${message}=    Handle Alert    action=ACCEPT
+    log    导出成功
+    Sleep    5
+
+导出图文
+    进入系统模块    xpath=//*[@id="menu_130619095023993fa6f0e33461840c4b"]/p/a
+    进入子菜单模块    xpath=//*[@id="130620104105892890d33170b303519e"]/a
+    进入frame    id=content-frame
+    文本框输入    plateNumber    陕CJ7216
+    #违法代码
+    点击元素    vioType
+    进入frame    id=jbox-iframe
+    文本框输入    id=code    6666
+    点击按钮    xpath=//*[@id="content_body"]/div[3]/div[1]/form/table/tbody/tr/td[5]/input[1]
+    sleep    1
+    点击元素    xpath=//*[@id="tbody"]/tr[1]/td[1]/input
+    退出frame
+    进入frame    id=content-frame
+    点击按钮    xpath=//*[@id="jbox-state-state0"]/div[2]/button
+    #违法代码
+    Select From List By Value    carNumColorCode    2    #蓝色
+    输入日期    startTime    2017-12-01 13:56:12
+    输入日期    endTime    2018-03-15 15:38:50
+    点击元素    id=text_search_devNames
+    进入frame    name=jbox-iframe
+    点击按钮    id=qx    #全部道路
+    Comment    点击元素    xpath=//*[@id="all"]/li[6]/input    #单个道路
+    退出frame
+    进入frame    id=content-frame
+    点击按钮    xpath=//*[@id="jbox-state-state0"]/div[2]/button
+    Select From List By Value    id=localcar    1    #外地车
+    Select From List By Value    id=directions    02    #由西向东
+    Comment    Select From List By Value    id=select_isExport    0    #未导出
+    点击按钮    xpath=//*[@id="search_table"]/tbody/tr[2]/td[9]/input[1]
+    sleep    4
+    ${chepai}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[2]
+    ${platecolor}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[4]
+    ${viocode}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[5]
+    ${direction}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[9]
+    ${status_export}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[11]/font
+    Run Keyword If    "${chepai}"=="陕CJ7216" and "${platecolor}"=="蓝色" and "${viocode}"=="6666" and "${direction}"=="由西向东" and "${status_export}"=="未导出"    log    查询成功
+    Capture Page Screenshot
+    #开始导出图文
+    ${num}    获取元素文本数值    xpath=//*[@id="result-table"]/div[2]/b[3]
+    点击按钮    export-btn
+    ${message}=    Handle Alert    action=ACCEPT
+    log    导出成功
+    Sleep    10

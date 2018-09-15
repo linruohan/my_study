@@ -1,0 +1,28 @@
+*** Settings ***
+Documentation     所有资源全部由文件share_resourse导入，实现资源的统一管理。
+Resource          ../share_resourse.txt
+
+*** Test Cases ***
+加1
+    ${num1}    Set variable    1
+    ${num2}    Set variable    2
+    ${num3}    Evaluate    ${num2}-${1}
+    log    ${num1},${num3}
+    Should Be Equal As Integers    ${num1}    ${num3}
+    Run Keyword If    ${num1}==${num3}    log    添加成功
+
+减1
+    ${num1}    Set variable    2
+    ${num2}    Set variable    1
+    ${num3}    Evaluate    ${num2}+${1}
+    log    ${num1},${num3}
+    Should Be Equal As Integers    ${num1}    ${num3}
+    Run Keyword If    ${num1}==${num3}    log    添加成功
+
+字符串相等
+    ${t1}    Set variable    s01
+    ${t2}    Set variable    s01
+    Comment    Should Be Equal As Strings    ${t1}    ${t2}
+    ${t3}=    字符串相等    ${t1}    ${t2}
+    log    ${t3}
+    Run Keyword If    ${t3}    log    hah

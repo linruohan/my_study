@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180320 15:18:15.467" generator="Robot 2.8.7 (Python 2.7.13 on win32)">
+<suite source="F:\atom\robotFramework\项目框架\Sanity_Test\login.txt" id="s1" name="Login">
+<test id="s1-t1" name="登录">
+<kw type="kw" name="GUI_keywords.登录">
+<doc></doc>
+<arguments>
+<arg>http://193.169.100.249:8086/itmsld/login</arg>
+<arg>admin</arg>
+<arg>admin</arg>
+</arguments>
+<kw type="kw" name="GUI_keywords.打开浏览器">
+<doc></doc>
+<arguments>
+<arg>${url}</arg>
+</arguments>
+<kw type="kw" name="SeleniumLibrary.Open Browser">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180320 15:18:15.774" level="INFO">Opening browser 'chrome' to base url 'http://193.169.100.249:8086/itmsld/login'.</msg>
+<status status="PASS" endtime="20180320 15:18:21.403" starttime="20180320 15:18:15.774"></status>
+</kw>
+<kw type="kw" name="SeleniumLibrary.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20180320 15:18:22.523" starttime="20180320 15:18:21.403"></status>
+</kw>
+<kw type="kw" name="SeleniumLibrary.Set Browser Implicit Wait">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20180320 15:18:22.525" starttime="20180320 15:18:22.524"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Get Title</arg>
+</arguments>
+<msg timestamp="20180320 15:18:22.526" level="INFO">Get Title</msg>
+<status status="PASS" endtime="20180320 15:18:22.526" starttime="20180320 15:18:22.526"></status>
+</kw>
+<status status="PASS" endtime="20180320 15:18:22.526" starttime="20180320 15:18:15.773"></status>
+</kw>
+<kw type="kw" name="GUI_keywords.输入用户名">
+<doc></doc>
+<arguments>
+<arg>${username}</arg>
+</arguments>
+<kw type="kw" name="SeleniumLibrary.Clear Element Text">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+</arguments>
+<status status="PASS" endtime="20180320 15:18:22.575" starttime="20180320 15:18:22.528"></status>
+</kw>
+<kw type="kw" name="SeleniumLibrary.Input Text">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20180320 15:18:22.576" level="INFO">Typing text 'admin' into text field 'id=username'.</msg>
+<status status="PASS" endtime="20180320 15:18:22.644" starttime="20180320 15:18:22.575"></status>
+</kw>
+<status status="PASS" endtime="20180320 15:18:22.645" starttime="20180320 15:18:22.527"></status>
+</kw>
+<kw type="kw" name="GUI_keywords.输入密码">
+<doc></doc>
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw type="kw" name="SeleniumLibrary.Clear Element Text">
+<doc>Clears the value of text entry element identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+</arguments>
+<status status="PASS" endtime="20180320 15:18:22.683" starttime="20180320 15:18:22.646"></status>
+</kw>
+<kw type="kw" name="SeleniumLibrary.Input Text">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20180320 15:18:22.684" level="INFO">Typing text 'admin' into text field 'id=password'.</msg>
+<status status="PASS" endtime="20180320 15:18:22.737" starttime="20180320 15:18:22.684"></status>
+</kw>
+<status status="PASS" endtime="20180320 15:18:22.738" starttime="20180320 15:18:22.645"></status>
+</kw>
+<kw type="kw" name="GUI_keywords.点击登录按钮">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="SeleniumLibrary.Click Button">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="loginForm"]/div[4]/input[1]</arg>
+</arguments>
+<msg timestamp="20180320 15:18:22.739" level="INFO">Clicking button '//*[@id="loginForm"]/div[4]/input[1]'.</msg>
+<status status="PASS" endtime="20180320 15:18:23.393" starttime="20180320 15:18:22.739"></status>
+</kw>
+<status status="PASS" endtime="20180320 15:18:23.394" starttime="20180320 15:18:22.738"></status>
+</kw>
+<kw type="kw" name="GUI_keywords.确认登录成功">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="SeleniumLibrary.Element Text Should Be">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>//*[@id="dropdown-toggle"]/span[1]</arg>
+<arg>超级管理员</arg>
+</arguments>
+<msg timestamp="20180320 15:18:23.395" level="INFO">Verifying element '//*[@id="dropdown-toggle"]/span[1]' contains exact text '超级管理员'.</msg>
+<status status="PASS" endtime="20180320 15:18:23.433" starttime="20180320 15:18:23.395"></status>
+</kw>
+<status status="PASS" endtime="20180320 15:18:23.433" starttime="20180320 15:18:23.394"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>登录成功</arg>
+</arguments>
+<msg timestamp="20180320 15:18:23.434" level="INFO">登录成功</msg>
+<status status="PASS" endtime="20180320 15:18:23.434" starttime="20180320 15:18:23.433"></status>
+</kw>
+<status status="PASS" endtime="20180320 15:18:23.434" starttime="20180320 15:18:15.772"></status>
+</kw>
+<kw type="kw" name="GUI_keywords.登出">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="SeleniumLibrary.Unselect Frame">
+<doc>Sets the main frame as the current frame.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20180320 15:18:23.437" starttime="20180320 15:18:23.435"></status>
+</kw>
+<kw type="kw" name="SeleniumLibrary.Click Element">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="dropdown-toggle"]/span[2]</arg>
+</arguments>
+<msg timestamp="20180320 15:18:23.438" level="INFO">Clicking element 'xpath=//*[@id="dropdown-toggle"]/span[2]'.</msg>
+<status status="PASS" endtime="20180320 15:18:23.511" starttime="20180320 15:18:23.438"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Sleep">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20180320 15:18:24.513" level="INFO">Slept 1 second</msg>
+<status status="PASS" endtime="20180320 15:18:24.513" starttime="20180320 15:18:23.512"></status>
+</kw>
+<kw type="kw" name="SeleniumLibrary.Click Link">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="dropdown-menu"]/li[2]/a</arg>
+</arguments>
+<msg timestamp="20180320 15:18:24.514" level="INFO">Clicking link 'xpath=//*[@id="dropdown-menu"]/li[2]/a'.</msg>
+<status status="PASS" endtime="20180320 15:18:24.741" starttime="20180320 15:18:24.513"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Sleep">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180320 15:18:26.743" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180320 15:18:26.743" starttime="20180320 15:18:24.741"></status>
+</kw>
+<kw type="kw" name="GUI_keywords.退出浏览器">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="SeleniumLibrary.Close Browser">
+<doc>Closes the current browser.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20180320 15:18:29.859" starttime="20180320 15:18:26.744"></status>
+</kw>
+<kw type="kw" name="MyLibrary.Close Driver">
+<doc>Close a process by process name.</doc>
+<arguments>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180320 15:18:30.045" level="INFO">chromedriver.exe is not exists</msg>
+<status status="PASS" endtime="20180320 15:18:30.045" starttime="20180320 15:18:29.859"></status>
+</kw>
+<status status="PASS" endtime="20180320 15:18:30.046" starttime="20180320 15:18:26.743"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Log">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>登出成功</arg>
+</arguments>
+<msg timestamp="20180320 15:18:30.046" level="INFO">登出成功</msg>
+<status status="PASS" endtime="20180320 15:18:30.046" starttime="20180320 15:18:30.046"></status>
+</kw>
+<status status="PASS" endtime="20180320 15:18:30.047" starttime="20180320 15:18:23.435"></status>
+</kw>
+<kw type="kw" name="GUI_keywords.退出所有窗口">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="SeleniumLibrary.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20180320 15:18:30.048" starttime="20180320 15:18:30.048"></status>
+</kw>
+<status status="PASS" endtime="20180320 15:18:30.048" starttime="20180320 15:18:30.047"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20180320 15:18:30.048" critical="yes" starttime="20180320 15:18:15.772"></status>
+</test>
+<test id="s1-t2" name="baidu">
+<kw type="kw" name="SeleniumLibrary.Open Browser">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.baidu.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180320 15:18:30.050" level="INFO">Opening browser 'chrome' to base url 'http://www.baidu.com'.</msg>
+<status status="PASS" endtime="20180320 15:18:40.998" starttime="20180320 15:18:30.050"></status>
+</kw>
+<kw type="kw" name="SeleniumLibrary.Input Text">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=kw</arg>
+<arg>123</arg>
+</arguments>
+<msg timestamp="20180320 15:18:41.000" level="INFO">Typing text '123' into text field 'id=kw'.</msg>
+<status status="PASS" endtime="20180320 15:18:41.185" starttime="20180320 15:18:40.999"></status>
+</kw>
+<kw type="kw" name="SeleniumLibrary.Click Element">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=su</arg>
+</arguments>
+<msg timestamp="20180320 15:18:41.187" level="INFO">Clicking element 'id=su'.</msg>
+<status status="PASS" endtime="20180320 15:18:41.326" starttime="20180320 15:18:41.186"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Sleep">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180320 15:18:43.327" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" endtime="20180320 15:18:43.327" starttime="20180320 15:18:41.327"></status>
+</kw>
+<kw type="kw" name="AutoItLibrary.Send">
+<doc>method Send</doc>
+<arguments>
+<arg>{PGDN}</arg>
+</arguments>
+<status status="PASS" endtime="20180320 15:18:43.346" starttime="20180320 15:18:43.328"></status>
+</kw>
+<kw type="kw" name="AutoItLibrary.Send">
+<doc>method Send</doc>
+<arguments>
+<arg>{PGDN}</arg>
+</arguments>
+<status status="PASS" endtime="20180320 15:18:43.362" starttime="20180320 15:18:43.346"></status>
+</kw>
+<kw type="kw" name="SeleniumLibrary.Click Element">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="page"]/a[9]/span[2]</arg>
+</arguments>
+<msg timestamp="20180320 15:18:43.363" level="INFO">Clicking element 'xpath=//*[@id="page"]/a[9]/span[2]'.</msg>
+<kw type="kw" name="SeleniumLibrary.Capture Page Screenshot">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<arguments>
+</arguments>
+<msg timestamp="20180320 15:18:43.764" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180320 15:18:43.764" starttime="20180320 15:18:43.463"></status>
+</kw>
+<msg timestamp="20180320 15:18:43.766" level="FAIL">WebDriverException: Message: unknown error: Element &lt;span class="pc"&gt;...&lt;/span&gt; is not clickable at point (544, 697). Other element would receive the click: &lt;div id="foot"&gt;...&lt;/div&gt;
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.10240 x86_64)
+</msg>
+<status status="FAIL" endtime="20180320 15:18:43.767" starttime="20180320 15:18:43.363"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20180320 15:18:43.767" critical="yes" starttime="20180320 15:18:30.049">WebDriverException: Message: unknown error: Element &lt;span class="pc"&gt;...&lt;/span&gt; is not clickable at point (544, 697). Other element would receive the click: &lt;div id="foot"&gt;...&lt;/div&gt;
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.34.522940 (1a76f96f66e3ca7b8e57d503b4dd3bccfba87af1),platform=Windows NT 10.0.10240 x86_64)
+</status>
+</test>
+<test id="s1-t3" name="001">
+<kw type="kw" name="${num1} = BuiltIn.Set Variable">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>1</arg>
+</arguments>
+<msg timestamp="20180320 15:18:43.770" level="INFO">${num1} = 1</msg>
+<status status="PASS" endtime="20180320 15:18:43.769" starttime="20180320 15:18:43.768"></status>
+</kw>
+<kw type="kw" name="${num2} = BuiltIn.Set Variable">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20180320 15:18:43.771" level="INFO">${num2} = 2</msg>
+<status status="PASS" endtime="20180320 15:18:43.771" starttime="20180320 15:18:43.770"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Be Equal As Integers">
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<arguments>
+<arg>${num1}</arg>
+<arg>${num2}-1</arg>
+</arguments>
+<msg timestamp="20180320 15:18:43.772" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'unicode'&gt;</msg>
+<msg timestamp="20180320 15:18:43.773" level="FAIL">'2-1' cannot be converted to an integer: ValueError: invalid literal for int() with base 10: '2-1'</msg>
+<status status="FAIL" endtime="20180320 15:18:43.773" starttime="20180320 15:18:43.771"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20180320 15:18:43.774" critical="yes" starttime="20180320 15:18:43.768">'2-1' cannot be converted to an integer: ValueError: invalid literal for int() with base 10: '2-1'</status>
+</test>
+<doc>所有资源全部由文件share_resourse导入，实现资源的统一管理。</doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20180320 15:18:43.774" starttime="20180320 15:18:15.467"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="1">Critical Tests</stat>
+<stat fail="2" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="2" pass="1" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

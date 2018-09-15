@@ -1,0 +1,85 @@
+*** Settings ***
+Suite Setup       login
+Suite Teardown    logout
+Test Setup
+Test Teardown     进入主界面
+Resource          ../share_resourse.txt
+
+*** Test Cases ***
+审核通过
+    进入系统模块    xpath=//*[@id="menu_1305030918504367a63fdc4d5033ea81"]/p/a
+    进入子菜单模块    xpath=//*[@id="130625182210781aa56a8baf88f8e6c4"]/a
+    ${carplatenum}    Set Variable    陕B12345
+    进入frame    id=content-frame
+    文本框输入    carPlateNum    ${carplatenum}
+    Select From List By Value    carPlateColorCode    2    #蓝色
+    点击按钮    xpath=//*[@id="content_body"]/div[2]/div[1]/form/table/tbody/tr/td[9]/input[1]
+    ${platenum}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[2]
+    ${num0}    获取元素文本数值    xpath=//*[@id="content_body"]/div[2]/div[2]/div[2]/div[2]/b[3]
+    Should Be Equal As Strings    ${carplatenum}    ${platenum}
+    log    查询成功
+    点击元素    xpath=//*[@id="tbody"]/tr[1]/td[1]/input
+    点击按钮    xpath=//*[@id="content_body"]/div[2]/div[2]/div[1]/div[1]/button[1]
+    Handle Alert
+    退出frame
+    进入frame    id=content-frame
+    点击按钮    xpath=//*[@id="content_body"]/div[3]/div[1]/form/table/tbody/tr/td[9]/input[1]
+    ${num}    获取元素文本数值    xpath=//*[@id="content_body"]/div[2]/div[2]/div[2]/div[2]/b[3]
+    验证数值减1    ${num0}    ${num}    #结案成功
+    log    结案成功
+
+布控驳回
+    进入系统模块    xpath=//*[@id="menu_1305030918504367a63fdc4d5033ea81"]/p/a
+    进入子菜单模块    xpath=//*[@id="130625182210781aa56a8baf88f8e6c4"]/a
+    ${carplatenum}    Set Variable    陕B12345
+    进入frame    id=content-frame
+    文本框输入    carPlateNum    ${carplatenum}
+    Select From List By Value    carPlateColorCode    2    #蓝色
+    点击按钮    xpath=//*[@id="content_body"]/div[2]/div[1]/form/table/tbody/tr/td[9]/input[1]
+    ${platenum}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[2]
+    ${num0}    获取元素文本数值    xpath=//*[@id="content_body"]/div[2]/div[2]/div[2]/div[2]/b[3]
+    Should Be Equal As Strings    ${carplatenum}    ${platenum}
+    log    查询成功
+    点击元素    xpath=//*[@id="tbody"]/tr[1]/td[1]/input
+    点击按钮    xpath=//*[@id="content_body"]/div[2]/div[2]/div[1]/div[1]/button[2]
+    Handle Alert
+    退出frame
+    进入frame    id=content-frame
+    点击按钮    xpath=//*[@id="content_body"]/div[3]/div[1]/form/table/tbody/tr/td[9]/input[1]
+    ${num}    获取元素文本数值    xpath=//*[@id="content_body"]/div[2]/div[2]/div[2]/div[2]/b[3]
+    验证数值减1    ${num0}    ${num}    #驳回成功
+    log    驳回成功
+
+布控删除
+    进入系统模块    xpath=//*[@id="menu_1305030918504367a63fdc4d5033ea81"]/p/a
+    进入子菜单模块    xpath=//*[@id="130625182210781aa56a8baf88f8e6c4"]/a
+    ${carplatenum}    Set Variable    陕B12345
+    进入frame    id=content-frame
+    文本框输入    carPlateNum    ${carplatenum}
+    Select From List By Value    carPlateColorCode    2    #蓝色
+    点击按钮    xpath=//*[@id="content_body"]/div[2]/div[1]/form/table/tbody/tr/td[9]/input[1]
+    ${platenum}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[2]
+    ${num0}    获取元素文本数值    xpath=//*[@id="content_body"]/div[2]/div[2]/div[2]/div[2]/b[3]
+    Should Be Equal As Strings    ${carplatenum}    ${platenum}
+    log    查询成功
+    点击元素    xpath=//*[@id="tbody"]/tr[1]/td[1]/input
+    点击按钮    xpath=//*[@id="content_body"]/div[2]/div[2]/div[1]/div[1]/button[3]
+    Handle Alert
+    sleep    2
+    退出frame
+    进入frame    id=content-frame
+    点击按钮    xpath=//*[@id="content_body"]/div[2]/div[1]/form/table/tbody/tr/td[9]/input[1]
+    ${num}    获取元素文本数值    xpath=//*[@id="content_body"]/div[2]/div[2]/div[2]/div[2]/b[3]
+    验证数值减1    ${num0}    ${num}    #删除成功
+    log    删除成功
+
+布控查询
+    进入系统模块    xpath=//*[@id="menu_1305030918504367a63fdc4d5033ea81"]/p/a
+    进入子菜单模块    xpath=//*[@id="130625182210781aa56a8baf88f8e6c4"]/a
+    ${carplatenum}    Set Variable    陕B12345
+    进入frame    id=content-frame
+    文本框输入    carPlateNum    ${carplatenum}
+    Select From List By Value    carPlateColorCode    2    #蓝色
+    点击按钮    xpath=//*[@id="content_body"]/div[2]/div[1]/form/table/tbody/tr/td[9]/input[1]
+    ${platenum}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[2]
+    Run Keyword If    "${platenum}"=="${carplatenum}"    log    查询成功

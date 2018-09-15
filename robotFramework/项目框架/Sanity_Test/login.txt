@@ -1,0 +1,13 @@
+*** Settings ***
+Documentation     所有资源全部由文件share_resourse导入，实现资源的统一管理。
+Suite Setup       login
+Test Teardown     进入主界面
+Resource          ../share_resourse.txt
+
+*** Test Cases ***
+登录平台
+    登录    http://193.169.100.249:8086/itmsld/login    admin    admin
+
+登出平台
+    登出
+    退出所有窗口

@@ -1,0 +1,103 @@
+*** Settings ***
+Suite Setup       login
+Suite Teardown    logout
+Test Setup
+Test Teardown     进入主界面
+Resource          ../share_resourse.txt
+
+*** Test Cases ***
+违法查询
+    [Documentation]    "${chepai}"=="陕CJ7216" and "${platecolor}"=="蓝色" and "${viocode}"=="6666" and "${direction}"=="由西向东"
+    进入系统模块    xpath=//*[@id="menu_130619095023993fa6f0e33461840c4b"]/p/a
+    进入子菜单模块    xpath=//*[@id="13082110271562558cd25d9b88967a95"]/a
+    进入frame    id=content-frame
+    文本框输入    id=car_plateNum    陕CJ7216
+    输入日期    startTime    2017-12-01 13:56:12
+    输入日期    endTime    2018-03-15 15:38:50
+    点击元素    vioType
+    进入frame    id=jbox-iframe
+    文本框输入    id=code    6666
+    点击按钮    xpath=//*[@id="content_body"]/div[3]/div[1]/form/table/tbody/tr/td[5]/input[1]
+    sleep    1
+    点击元素    xpath=//*[@id="tbody"]/tr[1]/td[1]/input
+    退出frame
+    进入frame    id=content-frame
+    点击按钮    xpath=//*[@id="jbox-state-state0"]/div[2]/button
+    点击元素    id=text_search_devNames
+    进入frame    name=jbox-iframe
+    点击按钮    id=qx    #全部道路
+    Comment    点击元素    xpath=//*[@id="all"]/li[6]/input    #单个道路
+    退出frame
+    进入frame    id=content-frame
+    点击按钮    xpath=//*[@id="jbox-state-state0"]/div[2]/button
+    Select From List By Value    id=carNumColorCode    2    #蓝色
+    Select From List By Value    id=select_voiConfirm    0    #未确认
+    Select From List By Value    id=directions    02    #由西向东
+    Select From List By Value    id=select_isExport    0    #未导出
+    点击按钮    xpath=//*[@id="search_form"]/table/tbody/tr[2]/td[9]/input[1]
+    sleep    2
+    ${chepai}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[1]
+    ${platecolor}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[3]
+    ${viocode}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[4]
+    ${direction}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[9]
+    Run Keyword If    "${chepai}"=="陕CJ7216" and "${platecolor}"=="蓝色" and "${viocode}"=="6666" and "${direction}"=="由西向东"    log    查询成功
+    Capture Page Screenshot
+
+查看
+    [Documentation]    "${chepai1}"=="陕CJ7216" and "${platecolor1}"=="蓝色" and "${viocode1}"=="6666" and "${direction1}"=="由西向东"
+    进入系统模块    xpath=//*[@id="menu_130619095023993fa6f0e33461840c4b"]/p/a
+    进入子菜单模块    xpath=//*[@id="13082110271562558cd25d9b88967a95"]/a
+    进入frame    id=content-frame
+    文本框输入    id=car_plateNum    陕CJ7216
+    输入日期    startTime    2017-12-01 13:56:12
+    输入日期    endTime    2018-03-15 15:38:50
+    sleep    1
+    点击元素    vioType
+    进入frame    id=jbox-iframe
+    文本框输入    id=code    6666
+    点击按钮    xpath=//*[@id="content_body"]/div[3]/div[1]/form/table/tbody/tr/td[5]/input[1]
+    sleep    1
+    点击元素    xpath=//*[@id="tbody"]/tr[1]/td[1]/input
+    退出frame
+    进入frame    id=content-frame
+    点击按钮    xpath=//*[@id="jbox-state-state0"]/div[2]/button
+    点击元素    id=text_search_devNames
+    进入frame    name=jbox-iframe
+    点击按钮    id=qx    #全部道路
+    Comment    点击元素    xpath=//*[@id="all"]/li[6]/input    #单个道路
+    退出frame
+    进入frame    id=content-frame
+    点击按钮    xpath=//*[@id="jbox-state-state0"]/div[2]/button
+    Select From List By Value    id=carNumColorCode    2    #蓝色
+    Select From List By Value    id=select_voiConfirm    0    #未确认
+    Select From List By Value    id=directions    02    #由西向东
+    Select From List By Value    id=select_isExport    0    #未导出
+    点击按钮    xpath=//*[@id="search_form"]/table/tbody/tr[2]/td[9]/input[1]
+    sleep    2
+    ${chepai}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[1]
+    ${platecolor}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[3]
+    ${viocode}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[4]
+    ${direction}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[9]
+    Run Keyword If    "${chepai}"=="陕CJ7216" and "${platecolor}"=="蓝色" and "${viocode}"=="6666" and "${direction}"=="由西向东"    log    查询成功
+    Capture Page Screenshot
+    点击link    xpath=//*[@id="tbody"]/tr[1]/td[12]/a
+    ${chepai1}    获取元素文本信息    id=vio_carNum
+    ${platecolor1}    获取元素文本信息    vio_carNumColorCode
+    ${viocode1}    获取元素文本信息    vio_vioTypeCode
+    ${direction1}    获取元素文本信息    vio_directionCode
+    Run Keyword If    "${chepai1}"=="陕CJ7216" and "${platecolor1}"=="蓝色" and "${viocode1}"=="6666" and "${direction1}"=="由西向东"    log    查看成功
+    Capture Page Screenshot
+    滚动条到底部
+    退出frame
+    进入frame    id=content-frame
+    点击按钮    id=next_btn    #下一条
+    sleep    2
+    滚动条到底部
+    退出frame
+    进入frame    id=content-frame
+    点击按钮    id=next_btn    #下一条
+    sleep    2
+    滚动条到底部
+    退出frame
+    进入frame    id=content-frame
+    点击元素    xpath=//table/tbody/tr/td[2]/input    #返回列表

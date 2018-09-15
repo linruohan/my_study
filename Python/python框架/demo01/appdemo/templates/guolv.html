@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    {% load extra_tags %}
+    <head>
+        <meta charset="utf-8">
+        <title>过滤器测试 extra_tags.py</title>
+    </head>
+    <body>
+        <h1>this is extra_tags.html</h1>
+        {{v}}
+        {{v | cut:"o"}}
+        {% current_time "%Y-%m-%d %H:%M:%S" %}
+    </body>
+</html>

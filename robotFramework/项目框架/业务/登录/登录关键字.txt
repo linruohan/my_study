@@ -1,0 +1,14 @@
+*** Settings ***
+Resource          ../../share_resourse.txt
+
+*** Keywords ***
+输入用户名
+    [Arguments]    ${username}
+    文本框输入    id=username    ${username}
+
+输入密码
+    [Arguments]    ${password}
+    文本框输入    id=password    ${password}
+
+点击登录
+    点击按钮    //*[@id="loginForm"]/div[4]/input[1]

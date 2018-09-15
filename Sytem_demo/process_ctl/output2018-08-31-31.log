@@ -1,0 +1,1408 @@
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.0, system=373427.03125, children_user=0.0, children_system=0.0)
+create_time:1535612000.0
+cwd:None
+exe:None
+io_counters:pio(read_count=0, write_count=0, read_bytes=0, write_bytes=0, other_count=0, other_bytes=0)
+memory_info:pmem(rss=4096, vms=0, num_page_faults=1, peak_wset=4096, wset=4096, peak_paged_pool=0, paged_pool=0, peak_nonpaged_pool=0, nonpaged_pool=0, pagefile=0, peak_pagefile=0, private=0)
+memory_percent:2.4011846484581635e-05
+name:System Idle Process
+num_threads:8
+status:running
+username:NT AUTHORITY\SYSTEM
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=5357), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='32.32.32.33', port=137), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='32.32.32.33', port=138), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='192.168.174.1', port=138), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::', port=5357), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='32.32.32.33', port=139), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='192.168.174.1', port=139), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='192.168.203.1', port=137), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='192.168.203.1', port=139), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=445), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='192.168.174.1', port=137), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::', port=445), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='192.168.203.1', port=138), raddr=(), status='NONE')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.0, system=529.625, children_user=0.0, children_system=0.0)
+create_time:1535612000.0
+cwd:None
+exe:None
+io_counters:pio(read_count=194, write_count=14140, read_bytes=105073748, write_bytes=523885676, other_count=331819, other_bytes=7599356)
+memory_info:pmem(rss=566202368, vms=1785856, num_page_faults=578446, peak_wset=979800064, wset=566202368, peak_paged_pool=0, paged_pool=0, peak_nonpaged_pool=0, nonpaged_pool=0, pagefile=1785856, peak_pagefile=2170880, private=1785856)
+memory_percent:3.3192295751031726
+name:System
+num_threads:169
+status:running
+username:NT AUTHORITY\SYSTEM
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.0, system=1.5625, children_user=0.0, children_system=0.0)
+create_time:1535612004.0
+cwd:None
+exe:None
+io_counters:pio(read_count=4, write_count=20, read_bytes=36868, write_bytes=3886, other_count=8186, other_bytes=655394)
+memory_info:pmem(rss=1069056, vms=360448, num_page_faults=806, peak_wset=1228800, wset=1069056, peak_paged_pool=56064, paged_pool=12760, peak_nonpaged_pool=4976, nonpaged_pool=2680, pagefile=360448, peak_pagefile=446464, private=360448)
+memory_percent:0.0062670919324758064
+name:smss.exe
+num_threads:2
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.28125, system=0.734375, children_user=0.0, children_system=0.0)
+create_time:1535612015.0
+cwd:None
+exe:None
+io_counters:pio(read_count=360, write_count=0, read_bytes=362630, write_bytes=0, other_count=9823, other_bytes=285965)
+memory_info:pmem(rss=5185536, vms=1400832, num_page_faults=135315, peak_wset=39493632, wset=5185536, peak_paged_pool=236480, paged_pool=221968, peak_nonpaged_pool=15832, nonpaged_pool=13656, pagefile=1400832, peak_pagefile=1626112, private=1400832)
+memory_percent:0.03039899764948035
+name:csrss.exe
+num_threads:10
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=49408), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::', port=49408), raddr=(), status='LISTEN')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.0, system=0.21875, children_user=0.0, children_system=0.0)
+create_time:1535612017.0
+cwd:None
+exe:None
+io_counters:pio(read_count=2, write_count=0, read_bytes=8252, write_bytes=0, other_count=2522, other_bytes=31886)
+memory_info:pmem(rss=5136384, vms=1208320, num_page_faults=2227, peak_wset=6066176, wset=5136384, peak_paged_pool=138176, paged_pool=135424, peak_nonpaged_pool=11608, nonpaged_pool=8792, pagefile=1208320, peak_pagefile=1757184, private=1208320)
+memory_percent:0.030110855491665367
+name:wininit.exe
+num_threads:1
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::', port=49417), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=49417), raddr=(), status='LISTEN')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=1.796875, system=4.15625, children_user=0.0, children_system=0.0)
+create_time:1535612024.0
+cwd:None
+exe:None
+io_counters:pio(read_count=87, write_count=1, read_bytes=456948, write_bytes=160, other_count=12658, other_bytes=176894)
+memory_info:pmem(rss=7049216, vms=2973696, num_page_faults=29768, peak_wset=8265728, wset=7049216, peak_paged_pool=141984, paged_pool=128440, peak_nonpaged_pool=17088, nonpaged_pool=10176, pagefile=2973696, peak_pagefile=3895296, private=2973696)
+memory_percent:0.041324387799964994
+name:services.exe
+num_threads:6
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::', port=49415), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=49415), raddr=(), status='LISTEN')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=4.875, system=4.734375, children_user=0.0, children_system=0.0)
+create_time:1535612024.0
+cwd:None
+exe:None
+io_counters:pio(read_count=6154, write_count=112, read_bytes=198226, write_bytes=135384, other_count=36889, other_bytes=3070436)
+memory_info:pmem(rss=6447104, vms=5156864, num_page_faults=55463, peak_wset=13475840, wset=6447104, peak_paged_pool=120840, paged_pool=118488, peak_nonpaged_pool=25960, nonpaged_pool=23240, pagefile=5156864, peak_pagefile=5300224, private=5156864)
+memory_percent:0.037794646366731494
+name:lsass.exe
+num_threads:8
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=17.265625, system=25.6875, children_user=0.0, children_system=0.0)
+create_time:1535612026.0
+cwd:None
+exe:None
+io_counters:pio(read_count=15, write_count=95, read_bytes=167464, write_bytes=306812, other_count=21476, other_bytes=626868)
+memory_info:pmem(rss=8622080, vms=5283840, num_page_faults=111285, peak_wset=17391616, wset=8622080, peak_paged_pool=280560, paged_pool=269912, peak_nonpaged_pool=29952, nonpaged_pool=22080, pagefile=5283840, peak_pagefile=26460160, private=5283840)
+memory_percent:0.05054493685004434
+name:svchost.exe
+num_threads:14
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::', port=135), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=135), raddr=(), status='LISTEN')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=97.796875, system=21.296875, children_user=0.0, children_system=0.0)
+create_time:1535612026.0
+cwd:None
+exe:None
+io_counters:pio(read_count=6, write_count=0, read_bytes=245760, write_bytes=0, other_count=5063, other_bytes=78398)
+memory_info:pmem(rss=8019968, vms=4366336, num_page_faults=214863, peak_wset=8908800, wset=8019968, peak_paged_pool=250392, paged_pool=186280, peak_nonpaged_pool=22752, nonpaged_pool=20032, pagefile=4366336, peak_pagefile=4669440, private=4366336)
+memory_percent:0.04701519541681084
+name:svchost.exe
+num_threads:11
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='0.0.0.0', port=4500), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='0.0.0.0', port=500), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=49410), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='::', port=500), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='::', port=4500), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::', port=49410), raddr=(), status='LISTEN')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=15.953125, system=13.9375, children_user=0.0, children_system=0.0)
+create_time:1535612026.0
+cwd:None
+exe:None
+io_counters:pio(read_count=3828, write_count=1007, read_bytes=18903473, write_bytes=24970814, other_count=80543, other_bytes=5967323)
+memory_info:pmem(rss=28168192, vms=17215488, num_page_faults=572492, peak_wset=60805120, wset=28168192, peak_paged_pool=463400, paged_pool=427664, peak_nonpaged_pool=100184, nonpaged_pool=72776, pagefile=17215488, peak_pagefile=44032000, private=17215488)
+memory_percent:0.1651294682744679
+name:svchost.exe
+num_threads:39
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='fe80::9da:b04c:aa85:2d34', port=546), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=49409), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='fe80::d9df:17db:b601:259d', port=546), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::', port=49409), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='fe80::8423:b2a2:d66c:ae18', port=546), raddr=(), status='NONE')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=3.453125, system=4.4375, children_user=0.0, children_system=0.0)
+create_time:1535612026.0
+cwd:None
+exe:None
+io_counters:pio(read_count=670, write_count=1394, read_bytes=22520692, write_bytes=36233824, other_count=25237, other_bytes=2023390)
+memory_info:pmem(rss=10178560, vms=11698176, num_page_faults=43863, peak_wset=23326720, wset=10178560, peak_paged_pool=196928, paged_pool=154968, peak_nonpaged_pool=41144, nonpaged_pool=34808, pagefile=11698176, peak_pagefile=15908864, private=11698176)
+memory_percent:0.05966943851418536
+name:svchost.exe
+num_threads:24
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=294.859375, system=147.40625, children_user=0.0, children_system=0.0)
+create_time:1535612026.0
+cwd:None
+exe:None
+io_counters:pio(read_count=218, write_count=53916, read_bytes=60964691, write_bytes=116418209, other_count=438863, other_bytes=173808476)
+memory_info:pmem(rss=118697984, vms=127508480, num_page_faults=1397235, peak_wset=149401600, wset=118697984, peak_paged_pool=225448, paged_pool=212016, peak_nonpaged_pool=46328, nonpaged_pool=35856, pagefile=127508480, peak_pagefile=156897280, private=127508480)
+memory_percent:0.6958392992766911
+name:svchost.exe
+num_threads:19
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='0.0.0.0', port=52643), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='193.169.100.238', port=55480), raddr=addr(ip='219.133.60.246', port=80), status='SYN_SENT')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=234.0, system=86.03125, children_user=0.0, children_system=0.0)
+create_time:1535612026.0
+cwd:None
+exe:None
+io_counters:pio(read_count=2245380, write_count=113426, read_bytes=6999327955, write_bytes=44574645, other_count=5614936, other_bytes=1924149244)
+memory_info:pmem(rss=29175808, vms=57110528, num_page_faults=7893810, peak_wset=64065536, wset=29175808, peak_paged_pool=397712, paged_pool=315936, peak_nonpaged_pool=98984, nonpaged_pool=84280, pagefile=57110528, peak_pagefile=74477568, private=57110528)
+memory_percent:0.17103638250967498
+name:QQPCRTP.exe
+num_threads:109
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=1.109375, system=0.921875, children_user=0.0, children_system=0.0)
+create_time:1535612027.0
+cwd:None
+exe:None
+io_counters:pio(read_count=34, write_count=0, read_bytes=714, write_bytes=0, other_count=25764, other_bytes=1504972)
+memory_info:pmem(rss=11935744, vms=6299648, num_page_faults=27507, peak_wset=19316736, wset=11935744, peak_paged_pool=297816, paged_pool=188656, peak_nonpaged_pool=36960, nonpaged_pool=30384, pagefile=6299648, peak_pagefile=7036928, private=6299648)
+memory_percent:0.06997052065607087
+name:svchost.exe
+num_threads:18
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='192.168.174.1', port=1900), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='::1', port=1900), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='::1', port=52973), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='fe80::8423:b2a2:d66c:ae18', port=1900), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='fe80::9da:b04c:aa85:2d34', port=52970), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='fe80::d9df:17db:b601:259d', port=52971), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='fe80::8423:b2a2:d66c:ae18', port=52972), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='192.168.203.1', port=52975), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='192.168.174.1', port=52976), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='127.0.0.1', port=1900), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='32.32.32.33', port=1900), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='fe80::d9df:17db:b601:259d', port=1900), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='192.168.203.1', port=1900), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='32.32.32.33', port=52974), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='fe80::9da:b04c:aa85:2d34', port=1900), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='127.0.0.1', port=52977), raddr=(), status='NONE')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=6.078125, system=3.921875, children_user=0.0, children_system=0.0)
+create_time:1535612027.0
+cwd:None
+exe:None
+io_counters:pio(read_count=0, write_count=0, read_bytes=0, write_bytes=0, other_count=109580, other_bytes=2351122)
+memory_info:pmem(rss=3072000, vms=2187264, num_page_faults=9851, peak_wset=8601600, wset=3072000, peak_paged_pool=91448, paged_pool=90360, peak_nonpaged_pool=27764, nonpaged_pool=21120, pagefile=2187264, peak_pagefile=2392064, private=2187264)
+memory_percent:0.018008884863436225
+name:svchost.exe
+num_threads:8
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='::', port=54231), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='0.0.0.0', port=5353), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='::', port=5353), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='0.0.0.0', port=5355), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='0.0.0.0', port=54231), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='::', port=5355), raddr=(), status='NONE')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=7.65625, system=8.0, children_user=0.0, children_system=0.0)
+create_time:1535612027.0
+cwd:None
+exe:None
+io_counters:pio(read_count=960, write_count=567, read_bytes=4703752, write_bytes=125740, other_count=246223, other_bytes=10456675)
+memory_info:pmem(rss=11309056, vms=7909376, num_page_faults=2678149, peak_wset=20344832, wset=11309056, peak_paged_pool=164952, paged_pool=147904, peak_nonpaged_pool=98192, nonpaged_pool=41656, pagefile=7909376, peak_pagefile=11038720, private=7909376)
+memory_percent:0.06629670814392989
+name:svchost.exe
+num_threads:18
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=6.96875, system=4.0, children_user=0.0, children_system=0.0)
+create_time:1535612029.0
+cwd:None
+exe:None
+io_counters:pio(read_count=1871, write_count=6193, read_bytes=172725640, write_bytes=29090216, other_count=49413, other_bytes=40438772)
+memory_info:pmem(rss=11501568, vms=9121792, num_page_faults=332485, peak_wset=101695488, wset=11501568, peak_paged_pool=115296, paged_pool=102280, peak_nonpaged_pool=43008, nonpaged_pool=20704, pagefile=9121792, peak_pagefile=111665152, private=9121792)
+memory_percent:0.06742526492870522
+name:svchost.exe
+num_threads:16
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=2.609375, system=2.515625, children_user=0.0, children_system=0.0)
+create_time:1535612029.0
+cwd:None
+exe:None
+io_counters:pio(read_count=398, write_count=118, read_bytes=21319316, write_bytes=2357181, other_count=35277, other_bytes=1545798)
+memory_info:pmem(rss=12115968, vms=7311360, num_page_faults=89791, peak_wset=22126592, wset=12115968, peak_paged_pool=282016, paged_pool=279280, peak_nonpaged_pool=26096, nonpaged_pool=21720, pagefile=7311360, peak_pagefile=8036352, private=7311360)
+memory_percent:0.07102704190139247
+name:svchost.exe
+num_threads:13
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='::', port=52254), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='::', port=3702), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='0.0.0.0', port=3702), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='0.0.0.0', port=52253), raddr=(), status='NONE')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=2.265625, system=2.296875, children_user=0.0, children_system=0.0)
+create_time:1535612029.0
+cwd:None
+exe:None
+io_counters:pio(read_count=0, write_count=0, read_bytes=0, write_bytes=0, other_count=40651, other_bytes=19501401)
+memory_info:pmem(rss=9166848, vms=5095424, num_page_faults=14159, peak_wset=12578816, wset=9166848, peak_paged_pool=98520, paged_pool=93296, peak_nonpaged_pool=23850, nonpaged_pool=17968, pagefile=5095424, peak_pagefile=5451776, private=5095424)
+memory_percent:0.053738512432493696
+name:dasHost.exe
+num_threads:11
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=3.0625, system=1.203125, children_user=0.0, children_system=0.0)
+create_time:1535612029.0
+cwd:None
+exe:None
+io_counters:pio(read_count=1873, write_count=326, read_bytes=10527812, write_bytes=760992, other_count=3740, other_bytes=117400)
+memory_info:pmem(rss=7430144, vms=4177920, num_page_faults=88378, peak_wset=17747968, wset=7430144, peak_paged_pool=132056, paged_pool=115688, peak_nonpaged_pool=36152, nonpaged_pool=16192, pagefile=4177920, peak_pagefile=6070272, private=4177920)
+memory_percent:0.04355748952303108
+name:svchost.exe
+num_threads:4
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=21), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=14147), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::', port=21), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::1', port=14147), raddr=(), status='LISTEN')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.203125, system=0.046875, children_user=0.0, children_system=0.0)
+create_time:1535612029.0
+cwd:None
+exe:None
+io_counters:pio(read_count=4, write_count=2, read_bytes=3820, write_bytes=232, other_count=238, other_bytes=7436)
+memory_info:pmem(rss=1097728, vms=6045696, num_page_faults=17511, peak_wset=11227136, wset=1097728, peak_paged_pool=105888, paged_pool=74368, peak_nonpaged_pool=18248, nonpaged_pool=14296, pagefile=6045696, peak_pagefile=6606848, private=6045696)
+memory_percent:0.0064351748578678775
+name:FileZilla Server.exe
+num_threads:7
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.1875, system=0.28125, children_user=0.0, children_system=0.0)
+create_time:1535612029.0
+cwd:None
+exe:None
+io_counters:pio(read_count=0, write_count=43, read_bytes=0, write_bytes=6084, other_count=2904, other_bytes=237112)
+memory_info:pmem(rss=6651904, vms=3493888, num_page_faults=6636, peak_wset=12046336, wset=6651904, peak_paged_pool=120888, paged_pool=115496, peak_nonpaged_pool=23788, nonpaged_pool=17272, pagefile=3493888, peak_pagefile=3735552, private=3493888)
+memory_percent:0.038995238690960575
+name:svchost.exe
+num_threads:11
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.015625, system=0.3125, children_user=0.0, children_system=0.0)
+create_time:1535612029.0
+cwd:None
+exe:None
+io_counters:pio(read_count=0, write_count=0, read_bytes=0, write_bytes=0, other_count=2472, other_bytes=155974)
+memory_info:pmem(rss=1667072, vms=1163264, num_page_faults=2500, peak_wset=5894144, wset=1667072, peak_paged_pool=40984, paged_pool=40712, peak_nonpaged_pool=11800, nonpaged_pool=8376, pagefile=1163264, peak_pagefile=1417216, private=1163264)
+memory_percent:0.009772821519224725
+name:svchost.exe
+num_threads:3
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::', port=10050), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=10050), raddr=(), status='LISTEN')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=3.015625, system=60.71875, children_user=0.0, children_system=0.0)
+create_time:1535612030.0
+cwd:None
+exe:None
+io_counters:pio(read_count=22, write_count=13, read_bytes=1476602, write_bytes=940, other_count=310906, other_bytes=12959848)
+memory_info:pmem(rss=1892352, vms=5476352, num_page_faults=8221, peak_wset=10809344, wset=1892352, peak_paged_pool=117568, paged_pool=72416, peak_nonpaged_pool=14840, nonpaged_pool=12632, pagefile=5476352, peak_pagefile=5672960, private=5476352)
+memory_percent:0.011093473075876714
+name:zabbix_agentd.exe
+num_threads:8
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=62.109375, system=20.609375, children_user=0.0, children_system=0.0)
+create_time:1535612060.0
+cwd:None
+exe:None
+io_counters:pio(read_count=26357, write_count=28910, read_bytes=26252341, write_bytes=107202950, other_count=1617649, other_bytes=117792154)
+memory_info:pmem(rss=40550400, vms=37224448, num_page_faults=134777, peak_wset=45940736, wset=40550400, peak_paged_pool=260216, paged_pool=251384, peak_nonpaged_pool=92024, nonpaged_pool=72984, pagefile=37224448, peak_pagefile=42020864, private=37224448)
+memory_percent:0.23771728019735816
+name:SearchIndexer.exe
+num_threads:15
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.78125, system=72.03125, children_user=0.0, children_system=0.0)
+create_time:1535631291.0
+cwd:None
+exe:None
+io_counters:pio(read_count=685214, write_count=0, read_bytes=17447555, write_bytes=0, other_count=24804, other_bytes=448236)
+memory_info:pmem(rss=24784896, vms=1994752, num_page_faults=64651, peak_wset=25702400, wset=24784896, peak_paged_pool=1062576, paged_pool=601432, peak_nonpaged_pool=32904, nonpaged_pool=28680, pagefile=1994752, peak_pagefile=2445312, private=1994752)
+memory_percent:0.14529568307820345
+name:csrss.exe
+num_threads:13
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.015625, system=0.109375, children_user=0.0, children_system=0.0)
+create_time:1535631291.0
+cwd:None
+exe:None
+io_counters:pio(read_count=4, write_count=0, read_bytes=200817, write_bytes=0, other_count=1969, other_bytes=193374)
+memory_info:pmem(rss=1953792, vms=1687552, num_page_faults=10467, peak_wset=25563136, wset=1953792, peak_paged_pool=196600, paged_pool=161400, peak_nonpaged_pool=11304, nonpaged_pool=8888, pagefile=1687552, peak_pagefile=3325952, private=1687552)
+memory_percent:0.01145365077314544
+name:winlogon.exe
+num_threads:2
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=2107.0, system=140.703125, children_user=0.0, children_system=0.0)
+create_time:1535631291.0
+cwd:None
+exe:None
+io_counters:pio(read_count=3, write_count=0, read_bytes=7328, write_bytes=0, other_count=450, other_bytes=4482)
+memory_info:pmem(rss=155561984, vms=69926912, num_page_faults=3672926, peak_wset=276017152, wset=155561984, peak_paged_pool=748744, paged_pool=554720, peak_nonpaged_pool=58504, nonpaged_pool=47896, pagefile=69926912, peak_pagefile=92532736, private=69926912)
+memory_percent:0.9119459176379259
+name:dwm.exe
+num_threads:17
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.359375, system=0.4375, children_user=0.0, children_system=0.0)
+create_time:1535673816.0
+cwd:C:\Windows\system32
+exe:C:\Windows\System32\sihost.exe
+io_counters:pio(read_count=12, write_count=0, read_bytes=606208, write_bytes=0, other_count=1387, other_bytes=41164)
+memory_info:pmem(rss=15609856, vms=4571136, num_page_faults=12573, peak_wset=19165184, wset=15609856, peak_paged_pool=209344, paged_pool=188560, peak_nonpaged_pool=19304, nonpaged_pool=15904, pagefile=4571136, peak_pagefile=4747264, private=4571136)
+memory_percent:0.09150914695274061
+name:sihost.exe
+num_threads:9
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.296875, system=1.140625, children_user=0.0, children_system=0.0)
+create_time:1535673816.0
+cwd:C:\Windows\system32
+exe:C:\Windows\System32\taskhostw.exe
+io_counters:pio(read_count=27, write_count=178, read_bytes=1905272, write_bytes=4562944, other_count=2423, other_bytes=26556)
+memory_info:pmem(rss=14213120, vms=6516736, num_page_faults=13015, peak_wset=14446592, wset=14213120, peak_paged_pool=237432, paged_pool=234760, peak_nonpaged_pool=163896, nonpaged_pool=163760, pagefile=6516736, peak_pagefile=6516736, private=6516736)
+memory_percent:0.08332110730149826
+name:taskhostw.exe
+num_threads:9
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='0.0.0.0', port=60643), raddr=(), status='NONE')]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=111.3125, system=138.125, children_user=0.0, children_system=0.0)
+create_time:1535673816.0
+cwd:C:\Windows\System32
+exe:C:\Windows\explorer.exe
+io_counters:pio(read_count=3601054, write_count=126276, read_bytes=752993048, write_bytes=526312339, other_count=3695093, other_bytes=138434872)
+memory_info:pmem(rss=151707648, vms=84238336, num_page_faults=5857284, peak_wset=196390912, wset=151707648, peak_paged_pool=1726176, paged_pool=1375784, peak_nonpaged_pool=364656, nonpaged_pool=363432, pagefile=84238336, peak_pagefile=128860160, private=84238336)
+memory_percent:0.8893507700959344
+name:explorer.exe
+num_threads:106
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.390625, system=0.625, children_user=0.0, children_system=0.0)
+create_time:1535673816.0
+cwd:C:\Windows\system32
+exe:C:\Windows\System32\InputMethod\CHS\ChsIME.exe
+io_counters:pio(read_count=12, write_count=393, read_bytes=20922, write_bytes=12328, other_count=3951, other_bytes=165254)
+memory_info:pmem(rss=15036416, vms=8101888, num_page_faults=10761, peak_wset=16015360, wset=15036416, peak_paged_pool=272064, paged_pool=272064, peak_nonpaged_pool=132752, nonpaged_pool=132752, pagefile=8101888, peak_pagefile=8392704, private=8101888)
+memory_percent:0.08814748844489917
+name:ChsIME.exe
+num_threads:8
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.46875, system=0.5625, children_user=0.0, children_system=0.0)
+create_time:1535673816.0
+cwd:C:\Windows\system32
+exe:C:\Windows\System32\RuntimeBroker.exe
+io_counters:pio(read_count=25, write_count=34, read_bytes=7292, write_bytes=15504, other_count=5924, other_bytes=107878)
+memory_info:pmem(rss=20000768, vms=7151616, num_page_faults=23283, peak_wset=22720512, wset=20000768, peak_paged_pool=342136, paged_pool=265624, peak_nonpaged_pool=33160, nonpaged_pool=19152, pagefile=7151616, peak_pagefile=8679424, private=7151616)
+memory_percent:0.11724984638421211
+name:RuntimeBroker.exe
+num_threads:7
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.828125, system=0.453125, children_user=0.0, children_system=0.0)
+create_time:1535673817.0
+cwd:C:\Windows\SystemApps\ShellExperienceHost_cw5n1h2txyewy
+exe:C:\Windows\SystemApps\ShellExperienceHost_cw5n1h2txyewy\ShellExperienceHost.exe
+io_counters:pio(read_count=110, write_count=6, read_bytes=254505, write_bytes=788, other_count=2339, other_bytes=5012)
+memory_info:pmem(rss=35872768, vms=21127168, num_page_faults=41661, peak_wset=56999936, wset=35872768, peak_paged_pool=659432, paged_pool=603664, peak_nonpaged_pool=50904, nonpaged_pool=41112, pagefile=21127168, peak_pagefile=25919488, private=21127168)
+memory_percent:0.21029575151196594
+name:ShellExperienceHost.exe
+num_threads:47
+status:stopped
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.25, system=0.28125, children_user=0.0, children_system=0.0)
+create_time:1535673817.0
+cwd:C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy
+exe:C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\SearchUI.exe
+io_counters:pio(read_count=267, write_count=36, read_bytes=2073824, write_bytes=112586, other_count=1662, other_bytes=16494)
+memory_info:pmem(rss=159744, vms=33255424, num_page_faults=27332, peak_wset=83103744, wset=159744, peak_paged_pool=607504, paged_pool=582112, peak_nonpaged_pool=61840, nonpaged_pool=49616, pagefile=33255424, peak_pagefile=42340352, private=33255424)
+memory_percent:0.0009364620128986837
+name:SearchUI.exe
+num_threads:25
+status:stopped
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='193.169.100.238', port=55488), raddr=addr(ip='112.90.78.167', port=36688), status='SYN_SENT'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='0.0.0.0', port=65372), raddr=(), status='NONE')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=253.609375, system=266.65625, children_user=0.0, children_system=0.0)
+create_time:1535673825.0
+cwd:None
+exe:None
+io_counters:pio(read_count=4375512, write_count=199679, read_bytes=5219756910, write_bytes=753124663, other_count=7821888, other_bytes=1670761061)
+memory_info:pmem(rss=48570368, vms=116617216, num_page_faults=16923767, peak_wset=134930432, wset=48570368, peak_paged_pool=1096856, paged_pool=724608, peak_nonpaged_pool=155136, nonpaged_pool=142472, pagefile=116617216, peak_pagefile=130920448, private=116617216)
+memory_percent:0.28473247561416903
+name:QQPCTray.exe
+num_threads:157
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=58.625, system=44.765625, children_user=0.0, children_system=0.0)
+create_time:1535673834.0
+cwd:None
+exe:None
+io_counters:pio(read_count=114326, write_count=9261, read_bytes=629423710, write_bytes=571631, other_count=33456, other_bytes=499362)
+memory_info:pmem(rss=30703616, vms=27439104, num_page_faults=576732, peak_wset=54386688, wset=30703616, peak_paged_pool=339400, paged_pool=321200, peak_nonpaged_pool=54512, nonpaged_pool=50048, pagefile=27439104, peak_pagefile=73936896, private=27439104)
+memory_percent:0.17999280124842393
+name:QQPCRealTimeSpeedup.exe
+num_threads:26
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=30985), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=2425), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='0.0.0.0', port=2425), raddr=(), status='NONE')]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=10.5625, system=36.53125, children_user=0.0, children_system=0.0)
+create_time:1535673910.0
+cwd:C:\Users\Administrator\Desktop
+exe:C:\Users\Administrator\Desktop\FeiQ.exe
+io_counters:pio(read_count=25881, write_count=1634, read_bytes=21096067, write_bytes=431413, other_count=22894, other_bytes=539844)
+memory_info:pmem(rss=13496320, vms=20434944, num_page_faults=683909, peak_wset=44412928, wset=13496320, peak_paged_pool=608072, paged_pool=563768, peak_nonpaged_pool=826296, nonpaged_pool=49280, pagefile=20434944, peak_pagefile=25694208, private=20434944)
+memory_percent:0.07911903416669648
+name:FeiQ.exe
+num_threads:16
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.375, system=0.828125, children_user=0.0, children_system=0.0)
+create_time:1535673912.0
+cwd:C:\Windows\System32
+exe:C:\Program Files\TortoiseSVN\bin\TSVNCache.exe
+io_counters:pio(read_count=15578, write_count=14602, read_bytes=8222200, write_bytes=43922816, other_count=39766, other_bytes=730)
+memory_info:pmem(rss=1433600, vms=2506752, num_page_faults=2866, peak_wset=8605696, wset=1433600, peak_paged_pool=181480, paged_pool=179160, peak_nonpaged_pool=15880, nonpaged_pool=14520, pagefile=2506752, peak_pagefile=2695168, private=2506752)
+memory_percent:0.008404146269603572
+name:TSVNCache.exe
+num_threads:17
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::1', port=55972), raddr=addr(ip='::1', port=55971), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=56012), raddr=addr(ip='127.0.0.1', port=912), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::1', port=55971), raddr=addr(ip='::1', port=55972), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='32.32.32.33', port=56015), raddr=addr(ip='32.32.32.32', port=808), status='CLOSE_WAIT')]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=13.8125, system=26.78125, children_user=0.0, children_system=0.0)
+create_time:1535673914.0
+cwd:C:\Program Files (x86)\VMware\VMware Workstation
+exe:C:\Program Files (x86)\VMware\VMware Workstation\vmware.exe
+io_counters:pio(read_count=160183, write_count=2760, read_bytes=35454600, write_bytes=2887602, other_count=41986, other_bytes=256060)
+memory_info:pmem(rss=6918144, vms=50847744, num_page_faults=132081, peak_wset=110587904, wset=6918144, peak_paged_pool=598040, paged_pool=514352, peak_nonpaged_pool=83904, nonpaged_pool=81792, pagefile=50847744, peak_pagefile=74096640, private=50847744)
+memory_percent:0.040556008712458375
+name:vmware.exe
+num_threads:16
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.046875, system=0.015625, children_user=0.0, children_system=0.0)
+create_time:1535673920.0
+cwd:C:\Program Files (x86)\VMware\VMware Workstation
+exe:C:\Program Files (x86)\VMware\VMware Workstation\vmware-tray.exe
+io_counters:pio(read_count=1, write_count=0, read_bytes=8328, write_bytes=0, other_count=18834, other_bytes=594)
+memory_info:pmem(rss=942080, vms=2609152, num_page_faults=2845, peak_wset=9850880, wset=942080, peak_paged_pool=209816, paged_pool=208280, peak_nonpaged_pool=17240, nonpaged_pool=16016, pagefile=2609152, peak_pagefile=2830336, private=2609152)
+memory_percent:0.005522724691453776
+name:vmware-tray.exe
+num_threads:3
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.078125, system=0.03125, children_user=0.0, children_system=0.0)
+create_time:1535673922.0
+cwd:C:\Program Files (x86)\VMware\VMware Workstation
+exe:C:\Program Files (x86)\VMware\VMware Workstation\vmware-unity-helper.exe
+io_counters:pio(read_count=10, write_count=59, read_bytes=22293, write_bytes=4940, other_count=737, other_bytes=7382)
+memory_info:pmem(rss=1462272, vms=4763648, num_page_faults=4842, peak_wset=17084416, wset=1462272, peak_paged_pool=298440, paged_pool=296840, peak_nonpaged_pool=22288, nonpaged_pool=19840, pagefile=4763648, peak_pagefile=5611520, private=4763648)
+memory_percent:0.008572229194995644
+name:vmware-unity-helper.exe
+num_threads:2
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.0, system=0.09375, children_user=0.0, children_system=0.0)
+create_time:1535673924.0
+cwd:None
+exe:None
+io_counters:pio(read_count=69, write_count=0, read_bytes=9505, write_bytes=0, other_count=202, other_bytes=802)
+memory_info:pmem(rss=9400320, vms=6082560, num_page_faults=3192, peak_wset=10563584, wset=9400320, peak_paged_pool=198904, paged_pool=196008, peak_nonpaged_pool=17800, nonpaged_pool=15080, pagefile=6082560, peak_pagefile=6574080, private=6082560)
+memory_percent:0.055107187682114846
+name:dllhost.exe
+num_threads:2
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=912), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=912), raddr=addr(ip='127.0.0.1', port=56012), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=56013), raddr=addr(ip='127.0.0.1', port=56014), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=902), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=56014), raddr=addr(ip='127.0.0.1', port=56013), status='ESTABLISHED')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=5.734375, system=23.78125, children_user=0.0, children_system=0.0)
+create_time:1535673924.0
+cwd:None
+exe:None
+io_counters:pio(read_count=181, write_count=19, read_bytes=764957, write_bytes=2979, other_count=14872, other_bytes=653422)
+memory_info:pmem(rss=2174976, vms=7204864, num_page_faults=77523, peak_wset=14598144, wset=2174976, peak_paged_pool=223176, paged_pool=186680, peak_nonpaged_pool=23500, nonpaged_pool=19624, pagefile=7204864, peak_pagefile=7352320, private=7204864)
+memory_percent:0.012750290483312847
+name:vmware-authd.exe
+num_threads:6
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=1743.84375, system=3953.015625, children_user=0.0, children_system=0.0)
+create_time:1535673925.0
+cwd:None
+exe:None
+io_counters:pio(read_count=98506, write_count=324537, read_bytes=1738043766, write_bytes=1469221695, other_count=964320, other_bytes=13006910)
+memory_info:pmem(rss=265662464, vms=160731136, num_page_faults=1705239, peak_wset=4443168768, wset=265662464, peak_paged_pool=8765696, paged_pool=8747960, peak_nonpaged_pool=76944, nonpaged_pool=48792, pagefile=160731136, peak_pagefile=167817216, private=160731136)
+memory_percent:1.5573843511434802
+name:vmware-vmx.exe
+num_threads:13
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.0, system=0.0, children_user=0.0, children_system=0.0)
+create_time:1535673932.0
+cwd:None
+exe:None
+io_counters:pio(read_count=29, write_count=101, read_bytes=6850, write_bytes=6877, other_count=31439, other_bytes=130255)
+memory_info:pmem(rss=245760, vms=2252800, num_page_faults=3152, peak_wset=9740288, wset=245760, peak_paged_pool=147680, paged_pool=147680, peak_nonpaged_pool=15096, nonpaged_pool=12104, pagefile=2252800, peak_pagefile=2428928, private=2252800)
+memory_percent:0.001440710789074898
+name:vmware-usbarbitrator64.exe
+num_threads:3
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=8307), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=443), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::1', port=8307), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::', port=443), raddr=(), status='LISTEN')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=1.359375, system=0.15625, children_user=0.0, children_system=0.0)
+create_time:1535673932.0
+cwd:None
+exe:None
+io_counters:pio(read_count=2281, write_count=1385, read_bytes=16340466, write_bytes=208650, other_count=3088, other_bytes=117106)
+memory_info:pmem(rss=2080768, vms=29315072, num_page_faults=28507, peak_wset=49778688, wset=2080768, peak_paged_pool=273784, paged_pool=273688, peak_nonpaged_pool=35272, nonpaged_pool=33560, pagefile=29315072, peak_pagefile=31318016, private=29315072)
+memory_percent:0.012198018014167469
+name:vmware-hostd.exe
+num_threads:17
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.03125, system=0.0, children_user=0.0, children_system=0.0)
+create_time:1535673936.0
+cwd:C:\Windows\system32
+exe:C:\Windows\System32\svchost.exe
+io_counters:pio(read_count=1, write_count=0, read_bytes=5712, write_bytes=0, other_count=194, other_bytes=960)
+memory_info:pmem(rss=11448320, vms=2187264, num_page_faults=3376, peak_wset=12574720, wset=11448320, peak_paged_pool=153800, paged_pool=153624, peak_nonpaged_pool=14408, nonpaged_pool=12504, pagefile=2187264, peak_pagefile=2551808, private=2187264)
+memory_percent:0.06711311092440567
+name:svchost.exe
+num_threads:1
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='32.32.32.33', port=55489), raddr=addr(ip='32.32.32.32', port=808), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=55490), raddr=addr(ip='127.0.0.1', port=9229), status='SYN_SENT'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='32.32.32.33', port=55384), raddr=addr(ip='32.32.32.32', port=808), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='32.32.32.33', port=55485), raddr=addr(ip='32.32.32.32', port=808), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=55491), raddr=addr(ip='127.0.0.1', port=9229), status='SYN_SENT'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='0.0.0.0', port=5353), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=2, laddr=addr(ip='::', port=5353), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='32.32.32.33', port=62096), raddr=addr(ip='32.32.32.32', port=808), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='32.32.32.33', port=55466), raddr=addr(ip='32.32.32.32', port=808), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='32.32.32.33', port=55465), raddr=addr(ip='32.32.32.32', port=808), status='ESTABLISHED')]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=509.0, system=205.96875, children_user=0.0, children_system=0.0)
+create_time:1535673941.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=1864039, write_count=2347752, read_bytes=2809050387, write_bytes=2132354109, other_count=981836, other_bytes=13444793)
+memory_info:pmem(rss=198393856, vms=220807168, num_page_faults=33180183, peak_wset=325206016, wset=198393856, peak_paged_pool=1639392, paged_pool=1140256, peak_nonpaged_pool=410676, nonpaged_pool=158664, pagefile=220807168, peak_pagefile=224432128, private=220807168)
+memory_percent:1.1630377963271958
+name:chrome.exe
+num_threads:52
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.0, system=0.046875, children_user=0.0, children_system=0.0)
+create_time:1535673941.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=238, write_count=125, read_bytes=30199, write_bytes=1500, other_count=1012, other_bytes=7964)
+memory_info:pmem(rss=1859584, vms=2736128, num_page_faults=2972, peak_wset=7409664, wset=1859584, peak_paged_pool=163440, paged_pool=163440, peak_nonpaged_pool=12848, nonpaged_pool=12168, pagefile=2736128, peak_pagefile=2818048, private=2736128)
+memory_percent:0.010901378304000063
+name:chrome.exe
+num_threads:6
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.0, system=0.046875, children_user=0.0, children_system=0.0)
+create_time:1535673943.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=3, write_count=0, read_bytes=548438, write_bytes=0, other_count=235, other_bytes=4136)
+memory_info:pmem(rss=606208, vms=2465792, num_page_faults=2810, peak_wset=7847936, wset=606208, peak_paged_pool=161040, paged_pool=160864, peak_nonpaged_pool=10672, nonpaged_pool=10672, pagefile=2465792, peak_pagefile=3207168, private=2465792)
+memory_percent:0.0035537532797180822
+name:chrome.exe
+num_threads:2
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.28125, system=0.203125, children_user=0.0, children_system=0.0)
+create_time:1535673945.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=771, write_count=751, read_bytes=65762904, write_bytes=107224, other_count=939, other_bytes=10848)
+memory_info:pmem(rss=12386304, vms=36687872, num_page_faults=65483, peak_wset=106049536, wset=12386304, peak_paged_pool=398368, paged_pool=398368, peak_nonpaged_pool=30656, nonpaged_pool=28208, pagefile=36687872, peak_pagefile=400392192, private=36687872)
+memory_percent:0.07261182376937486
+name:chrome.exe
+num_threads:13
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=71.203125, system=5.96875, children_user=0.0, children_system=0.0)
+create_time:1535673952.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=93322, write_count=127686, read_bytes=87647601, write_bytes=196100596, other_count=520, other_bytes=10682)
+memory_info:pmem(rss=80064512, vms=66670592, num_page_faults=793367, peak_wset=159481856, wset=80064512, peak_paged_pool=898072, paged_pool=798080, peak_nonpaged_pool=81976, nonpaged_pool=52352, pagefile=66670592, peak_pagefile=78028800, private=66670592)
+memory_percent:0.46935956323411715
+name:chrome.exe
+num_threads:21
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.03125, system=0.0625, children_user=0.0, children_system=0.0)
+create_time:1535675636.0
+cwd:C:\Windows\system32
+exe:C:\Windows\System32\ApplicationFrameHost.exe
+io_counters:pio(read_count=9, write_count=0, read_bytes=18004, write_bytes=0, other_count=172, other_bytes=530)
+memory_info:pmem(rss=18681856, vms=6635520, num_page_faults=6525, peak_wset=22396928, wset=18681856, peak_paged_pool=304640, paged_pool=280744, peak_nonpaged_pool=20120, nonpaged_pool=15632, pagefile=6635520, peak_pagefile=7278592, private=6635520)
+memory_percent:0.10951803181617682
+name:ApplicationFrameHost.exe
+num_threads:2
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.15625, system=0.0625, children_user=0.0, children_system=0.0)
+create_time:1535675637.0
+cwd:C:\Program Files\WindowsApps\Microsoft.WindowsCalculator_10.1506.19010.0_x64__8wekyb3d8bbwe
+exe:C:\Program Files\WindowsApps\Microsoft.WindowsCalculator_10.1506.19010.0_x64__8wekyb3d8bbwe\Calculator.exe
+io_counters:pio(read_count=5, write_count=0, read_bytes=37635, write_bytes=0, other_count=465, other_bytes=3868)
+memory_info:pmem(rss=73728, vms=10723328, num_page_faults=10324, peak_wset=38092800, wset=73728, peak_paged_pool=390896, paged_pool=390624, peak_nonpaged_pool=26560, nonpaged_pool=25200, pagefile=10723328, peak_pagefile=11202560, private=10723328)
+memory_percent:0.0004322132367224694
+name:Calculator.exe
+num_threads:25
+status:stopped
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='193.169.100.238', port=3306), raddr=addr(ip='193.169.100.238', port=54147), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::', port=3306), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=3306), raddr=(), status='LISTEN')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=14.15625, system=0.75, children_user=0.0, children_system=0.0)
+create_time:1535677440.0
+cwd:None
+exe:None
+io_counters:pio(read_count=1834, write_count=4446, read_bytes=11704727, write_bytes=14383508, other_count=61569, other_bytes=496551)
+memory_info:pmem(rss=4251648, vms=302354432, num_page_faults=80347, peak_wset=217591808, wset=4251648, peak_paged_pool=222136, paged_pool=220792, peak_nonpaged_pool=51848, nonpaged_pool=27896, pagefile=302354432, peak_pagefile=302354432, private=302354432)
+memory_percent:0.024924296650995735
+name:mysqld.exe
+num_threads:37
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='0.0.0.0', port=43333), raddr=(), status='NONE')]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=7.453125, system=10.453125, children_user=0.0, children_system=0.0)
+create_time:1535677491.0
+cwd:C:\Program Files (x86)\Baidu\BaiduPinyin\5.4.4920.0
+exe:C:\Program Files (x86)\Baidu\BaiduPinyin\5.4.4920.0\baidupinyin.exe
+io_counters:pio(read_count=74528, write_count=48065, read_bytes=617272579, write_bytes=8288466, other_count=142460, other_bytes=803934)
+memory_info:pmem(rss=35926016, vms=23416832, num_page_faults=391143, peak_wset=70873088, wset=35926016, peak_paged_pool=399576, paged_pool=398568, peak_nonpaged_pool=38752, nonpaged_pool=35512, pagefile=23416832, peak_pagefile=24150016, private=23416832)
+memory_percent:0.21060790551626551
+name:baidupinyin.exe
+num_threads:27
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.171875, system=0.46875, children_user=0.0, children_system=0.0)
+create_time:1535677492.0
+cwd:C:\Program Files (x86)\Baidu\BaiduPinyin
+exe:C:\Program Files (x86)\Baidu\BaiduPinyin\IMEBroker.exe
+io_counters:pio(read_count=2, write_count=0, read_bytes=4558, write_bytes=0, other_count=17955, other_bytes=612788)
+memory_info:pmem(rss=1175552, vms=1163264, num_page_faults=2018, peak_wset=6479872, wset=1175552, peak_paged_pool=159736, paged_pool=158200, peak_nonpaged_pool=9352, nonpaged_pool=8080, pagefile=1163264, peak_pagefile=1376256, private=1163264)
+memory_percent:0.006891399941074929
+name:IMEBroker.exe
+num_threads:1
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='0.0.0.0', port=56912), raddr=(), status='NONE')]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=5.4375, system=10.921875, children_user=0.0, children_system=0.0)
+create_time:1535679275.0
+cwd:C:\Windows\system32
+exe:C:\Windows\explorer.exe
+io_counters:pio(read_count=15665, write_count=66, read_bytes=3653433, write_bytes=31209, other_count=2129322, other_bytes=35672496)
+memory_info:pmem(rss=61644800, vms=23564288, num_page_faults=29819, peak_wset=69271552, wset=61644800, peak_paged_pool=733280, paged_pool=491176, peak_nonpaged_pool=83280, nonpaged_pool=75848, pagefile=23564288, peak_pagefile=25436160, private=23564288)
+memory_percent:0.3613782895929536
+name:explorer.exe
+num_threads:27
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=8766), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=2, laddr=addr(ip='0.0.0.0', port=30847), raddr=(), status='NONE'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=8911), raddr=(), status='LISTEN')]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=115.1875, system=472.4375, children_user=0.0, children_system=0.0)
+create_time:1535688379.0
+cwd:None
+exe:None
+io_counters:pio(read_count=55, write_count=42, read_bytes=10648, write_bytes=18872, other_count=2734946, other_bytes=43763440)
+memory_info:pmem(rss=9453568, vms=11862016, num_page_faults=1450647, peak_wset=17321984, wset=9453568, peak_paged_pool=216168, paged_pool=197824, peak_nonpaged_pool=34576, nonpaged_pool=29240, pagefile=11862016, peak_pagefile=11878400, private=11862016)
+memory_percent:0.055419341686414415
+name:Tencentdl.exe
+num_threads:28
+status:running
+username:None
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=54158), raddr=addr(ip='127.0.0.1', port=54159), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=54160), raddr=addr(ip='127.0.0.1', port=54161), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=54162), raddr=addr(ip='127.0.0.1', port=54163), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=8092), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=8909), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::', port=8092), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET6: 23>, type=1, laddr=addr(ip='::', port=8909), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=54138), raddr=addr(ip='127.0.0.1', port=54137), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=54136), raddr=addr(ip='127.0.0.1', port=54135), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=54159), raddr=addr(ip='127.0.0.1', port=54158), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=54156), raddr=addr(ip='127.0.0.1', port=54157), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=54157), raddr=addr(ip='127.0.0.1', port=54156), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=54161), raddr=addr(ip='127.0.0.1', port=54160), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=54137), raddr=addr(ip='127.0.0.1', port=54138), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=54163), raddr=addr(ip='127.0.0.1', port=54162), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=8115), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=54135), raddr=addr(ip='127.0.0.1', port=54136), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='193.169.100.238', port=54147), raddr=addr(ip='193.169.100.238', port=3306), status='ESTABLISHED')]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=53.046875, system=6.875, children_user=0.0, children_system=0.0)
+create_time:1535693855.0
+cwd:D:\apache-Tomcat\apache-tomcat-8.5.23--8192tzgl\bin
+exe:C:\Program Files\Java\jdk1.8.0_171\bin\java.exe
+io_counters:pio(read_count=139940, write_count=501, read_bytes=187247256, write_bytes=232102, other_count=540781, other_bytes=13079386)
+memory_info:pmem(rss=136720384, vms=2137305088, num_page_faults=788371, peak_wset=1635164160, wset=136720384, peak_paged_pool=217960, paged_pool=215720, peak_nonpaged_pool=1623552, nonpaged_pool=58320, pagefile=2137305088, peak_pagefile=2137853952, private=2137305088)
+memory_percent:0.8014914238088503
+name:java.exe
+num_threads:59
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.234375, system=0.703125, children_user=0.0, children_system=0.0)
+create_time:1535693855.0
+cwd:C:\Windows
+exe:C:\Windows\System32\conhost.exe
+io_counters:pio(read_count=839, write_count=33, read_bytes=864310, write_bytes=17317, other_count=1082, other_bytes=56782)
+memory_info:pmem(rss=20791296, vms=17010688, num_page_faults=8354, peak_wset=27095040, wset=20791296, peak_paged_pool=259952, paged_pool=257992, peak_nonpaged_pool=21880, nonpaged_pool=20248, pagefile=17010688, peak_pagefile=17313792, private=17010688)
+memory_percent:0.12188413275573637
+name:conhost.exe
+num_threads:9
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=1.1875, system=0.15625, children_user=0.0, children_system=0.0)
+create_time:1535693875.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=2218, write_count=2480, read_bytes=66238017, write_bytes=732916, other_count=354, other_bytes=10606)
+memory_info:pmem(rss=17027072, vms=24485888, num_page_faults=47919, peak_wset=72622080, wset=17027072, peak_paged_pool=547096, paged_pool=473712, peak_nonpaged_pool=38520, nonpaged_pool=28144, pagefile=24485888, peak_pagefile=34467840, private=24485888)
+memory_percent:0.09981724583640586
+name:chrome.exe
+num_threads:18
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=19.0625, system=1.84375, children_user=0.0, children_system=0.0)
+create_time:1535694072.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=28385, write_count=37323, read_bytes=74934785, write_bytes=24067060, other_count=381, other_bytes=10608)
+memory_info:pmem(rss=91791360, vms=68657152, num_page_faults=264825, peak_wset=183709696, wset=91791360, peak_paged_pool=1037992, paged_pool=855064, peak_nonpaged_pool=65368, nonpaged_pool=45552, pagefile=68657152, peak_pagefile=86999040, private=68657152)
+memory_percent:0.5381054797194744
+name:chrome.exe
+num_threads:19
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=3.4375, system=0.40625, children_user=0.0, children_system=0.0)
+create_time:1535694121.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=3702, write_count=5103, read_bytes=66546153, write_bytes=1492352, other_count=358, other_bytes=10606)
+memory_info:pmem(rss=33378304, vms=49799168, num_page_faults=86387, peak_wset=90275840, wset=33378304, peak_paged_pool=818424, paged_pool=793664, peak_nonpaged_pool=44464, nonpaged_pool=35080, pagefile=49799168, peak_pagefile=64299008, private=49799168)
+memory_percent:0.19567253700285572
+name:chrome.exe
+num_threads:19
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=994.140625, system=9.8125, children_user=0.0, children_system=0.0)
+create_time:1535696179.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=149722, write_count=154187, read_bytes=102802201, write_bytes=54228284, other_count=359, other_bytes=10608)
+memory_info:pmem(rss=48791552, vms=58613760, num_page_faults=164113, peak_wset=128786432, wset=48791552, peak_paged_pool=857400, paged_pool=791712, peak_nonpaged_pool=57600, nonpaged_pool=36712, pagefile=58613760, peak_pagefile=75874304, private=58613760)
+memory_percent:0.28602911532433645
+name:chrome.exe
+num_threads:19
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=4.390625, system=0.265625, children_user=0.0, children_system=0.0)
+create_time:1535697219.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=2821, write_count=5479, read_bytes=67152433, write_bytes=4644308, other_count=363, other_bytes=10608)
+memory_info:pmem(rss=83230720, vms=59133952, num_page_faults=72856, peak_wset=122564608, wset=83230720, peak_paged_pool=735896, paged_pool=671176, peak_nonpaged_pool=58088, nonpaged_pool=40656, pagefile=59133952, peak_pagefile=80023552, private=59133952)
+memory_percent:0.4879207205666988
+name:chrome.exe
+num_threads:19
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=11.34375, system=0.4375, children_user=0.0, children_system=0.0)
+create_time:1535701336.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=17345, write_count=6505, read_bytes=91458033, write_bytes=2323644, other_count=355, other_bytes=10576)
+memory_info:pmem(rss=71880704, vms=47828992, num_page_faults=75775, peak_wset=113897472, wset=71880704, peak_paged_pool=623272, paged_pool=620200, peak_nonpaged_pool=44600, nonpaged_pool=40248, pagefile=47828992, peak_pagefile=91291648, private=47828992)
+memory_percent:0.42138389395792303
+name:chrome.exe
+num_threads:18
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.0625, system=0.03125, children_user=0.0, children_system=0.0)
+create_time:1535701346.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=671, write_count=504, read_bytes=65901993, write_bytes=75576, other_count=341, other_bytes=10542)
+memory_info:pmem(rss=29679616, vms=20295680, num_page_faults=10051, peak_wset=30916608, wset=29679616, peak_paged_pool=465424, paged_pool=465424, peak_nonpaged_pool=28416, nonpaged_pool=26784, pagefile=20295680, peak_pagefile=22265856, private=20295680)
+memory_percent:0.17398983962727851
+name:chrome.exe
+num_threads:17
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.171875, system=0.046875, children_user=0.0, children_system=0.0)
+create_time:1535701346.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=1716, write_count=1828, read_bytes=66196417, write_bytes=357392, other_count=340, other_bytes=10542)
+memory_info:pmem(rss=32178176, vms=22970368, num_page_faults=10470, peak_wset=32186368, wset=32178176, peak_paged_pool=406312, paged_pool=394288, peak_nonpaged_pool=30528, nonpaged_pool=26376, pagefile=22970368, peak_pagefile=23363584, private=22970368)
+memory_percent:0.1886370659828733
+name:chrome.exe
+num_threads:17
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=7.640625, system=0.421875, children_user=0.0, children_system=0.0)
+create_time:1535701436.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=5898, write_count=41300, read_bytes=67778025, write_bytes=30084068, other_count=358, other_bytes=10542)
+memory_info:pmem(rss=70930432, vms=45109248, num_page_faults=68690, peak_wset=121065472, wset=70930432, peak_paged_pool=895032, paged_pool=811920, peak_nonpaged_pool=63912, nonpaged_pool=35352, pagefile=45109248, peak_pagefile=57663488, private=45109248)
+memory_percent:0.4158131455735002
+name:chrome.exe
+num_threads:19
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.234375, system=0.046875, children_user=0.0, children_system=0.0)
+create_time:1535701485.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=991, write_count=752, read_bytes=66016001, write_bytes=145688, other_count=352, other_bytes=10544)
+memory_info:pmem(rss=37322752, vms=23121920, num_page_faults=13860, peak_wset=38793216, wset=37322752, peak_paged_pool=504056, paged_pool=502712, peak_nonpaged_pool=30608, nonpaged_pool=27736, pagefile=23121920, peak_pagefile=23928832, private=23121920)
+memory_percent:0.21879594516750786
+name:chrome.exe
+num_threads:18
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.078125, system=0.03125, children_user=0.0, children_system=0.0)
+create_time:1535701485.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=507, write_count=368, read_bytes=65861129, write_bytes=56016, other_count=352, other_bytes=10544)
+memory_info:pmem(rss=32268288, vms=22466560, num_page_faults=11576, peak_wset=33091584, wset=32268288, peak_paged_pool=414504, paged_pool=404264, peak_nonpaged_pool=27856, nonpaged_pool=26784, pagefile=22466560, peak_pagefile=24494080, private=22466560)
+memory_percent:0.1891653266055341
+name:chrome.exe
+num_threads:17
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=8.625, system=0.5625, children_user=0.0, children_system=0.0)
+create_time:1535701490.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=6239, write_count=7418, read_bytes=68377377, write_bytes=21117608, other_count=356, other_bytes=10576)
+memory_info:pmem(rss=65331200, vms=40218624, num_page_faults=66474, peak_wset=114327552, wset=65331200, peak_paged_pool=769416, paged_pool=673752, peak_nonpaged_pool=63768, nonpaged_pool=33856, pagefile=40218624, peak_pagefile=54300672, private=40218624)
+memory_percent:0.3829889514290771
+name:chrome.exe
+num_threads:20
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=50745), raddr=addr(ip='127.0.0.1', port=50744), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=6942), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='0.0.0.0', port=50754), raddr=(), status='LISTEN'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=50746), raddr=addr(ip='127.0.0.1', port=50747), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=50744), raddr=addr(ip='127.0.0.1', port=50745), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=50747), raddr=addr(ip='127.0.0.1', port=50746), status='ESTABLISHED'), pconn(fd=-1, family=<AddressFamily.AF_INET: 2>, type=1, laddr=addr(ip='127.0.0.1', port=63342), raddr=(), status='LISTEN')]
+cpu_affinity:[0, 1]
+cpu_percent:0.0
+cpu_times:pcputimes(user=655.359375, system=50.859375, children_user=0.0, children_system=0.0)
+create_time:1535702123.0
+cwd:C:\Users\Administrator\Desktop
+exe:C:\Program Files\JetBrains\PyCharm 2017.3.3\bin\pycharm64.exe
+io_counters:pio(read_count=141292, write_count=19497, read_bytes=508752333, write_bytes=2097731652, other_count=357171, other_bytes=22065954)
+memory_info:pmem(rss=967979008, vms=981340160, num_page_faults=1000163, peak_wset=980000768, wset=967979008, peak_paged_pool=488304, paged_pool=488112, peak_nonpaged_pool=91376, nonpaged_pool=83496, pagefile=981340160, peak_pagefile=993988608, private=981340160)
+memory_percent:5.674551596775785
+name:pycharm64.exe
+num_threads:61
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.109375, system=0.3125, children_user=0.0, children_system=0.0)
+create_time:1535702127.0
+cwd:C:\Users\Administrator\Desktop
+exe:C:\Program Files\JetBrains\PyCharm 2017.3.3\bin\fsnotifier64.exe
+io_counters:pio(read_count=8, write_count=12993, read_bytes=825, write_bytes=1102959, other_count=13031, other_bytes=2164368)
+memory_info:pmem(rss=4231168, vms=2547712, num_page_faults=1070, peak_wset=4255744, wset=4231168, peak_paged_pool=2129728, paged_pool=30752, peak_nonpaged_pool=10848, nonpaged_pool=3520, pagefile=2547712, peak_pagefile=2605056, private=2547712)
+memory_percent:0.024804237418572826
+name:fsnotifier64.exe
+num_threads:3
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.0, system=0.0, children_user=0.0, children_system=0.0)
+create_time:1535702127.0
+cwd:C:\Windows
+exe:C:\Windows\System32\conhost.exe
+io_counters:pio(read_count=0, write_count=0, read_bytes=0, write_bytes=0, other_count=66, other_bytes=356)
+memory_info:pmem(rss=9089024, vms=10313728, num_page_faults=2294, peak_wset=9121792, wset=9089024, peak_paged_pool=155512, paged_pool=155336, peak_nonpaged_pool=8008, nonpaged_pool=7192, pagefile=10313728, peak_pagefile=10473472, private=10313728)
+memory_percent:0.053282287349286646
+name:conhost.exe
+num_threads:1
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=10.765625, system=10.6875, children_user=0.0, children_system=0.0)
+create_time:1535702209.0
+cwd:None
+exe:None
+io_counters:pio(read_count=420, write_count=27, read_bytes=803508, write_bytes=16768, other_count=50808, other_bytes=3631632)
+memory_info:pmem(rss=48472064, vms=17575936, num_page_faults=15514, peak_wset=48472064, wset=48472064, peak_paged_pool=586632, paged_pool=496856, peak_nonpaged_pool=36064, nonpaged_pool=31960, pagefile=17575936, peak_pagefile=17784832, private=17575936)
+memory_percent:0.2841561912985391
+name:Taskmgr.exe
+num_threads:21
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=2.703125, system=0.46875, children_user=0.0, children_system=0.0)
+create_time:1535702400.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=5306, write_count=7424, read_bytes=68123705, write_bytes=5299500, other_count=361, other_bytes=10576)
+memory_info:pmem(rss=61440000, vms=29544448, num_page_faults=70167, peak_wset=86503424, wset=61440000, peak_paged_pool=670520, paged_pool=617584, peak_nonpaged_pool=48688, nonpaged_pool=36440, pagefile=29544448, peak_pagefile=33280000, private=29544448)
+memory_percent:0.3601776972687245
+name:chrome.exe
+num_threads:19
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=3.09375, system=2.890625, children_user=0.0, children_system=0.0)
+create_time:1535703416.0
+cwd:None
+exe:None
+io_counters:pio(read_count=197, write_count=0, read_bytes=442724, write_bytes=0, other_count=147137, other_bytes=2559874)
+memory_info:pmem(rss=9416704, vms=3084288, num_page_faults=8587, peak_wset=11800576, wset=9416704, peak_paged_pool=163664, paged_pool=163632, peak_nonpaged_pool=14272, nonpaged_pool=13040, pagefile=3084288, peak_pagefile=3284992, private=3084288)
+memory_percent:0.05520323506805318
+name:SearchProtocolHost.exe
+num_threads:7
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=1.828125, system=0.265625, children_user=0.0, children_system=0.0)
+create_time:1535703918.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=2410, write_count=3517, read_bytes=66485785, write_bytes=3849780, other_count=363, other_bytes=10576)
+memory_info:pmem(rss=73375744, vms=37703680, num_page_faults=53595, peak_wset=95821824, wset=73375744, peak_paged_pool=749240, paged_pool=701488, peak_nonpaged_pool=51768, nonpaged_pool=39432, pagefile=37703680, peak_pagefile=41558016, private=37703680)
+memory_percent:0.4301482179247954
+name:chrome.exe
+num_threads:19
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.0625, system=0.03125, children_user=0.0, children_system=0.0)
+create_time:1535703963.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=1098, write_count=1163, read_bytes=66010313, write_bytes=192704, other_count=340, other_bytes=10544)
+memory_info:pmem(rss=29995008, vms=20508672, num_page_faults=9976, peak_wset=30007296, wset=29995008, peak_paged_pool=406312, paged_pool=394288, peak_nonpaged_pool=30384, nonpaged_pool=26240, pagefile=20508672, peak_pagefile=21782528, private=20508672)
+memory_percent:0.1758387518065913
+name:chrome.exe
+num_threads:17
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.015625, system=0.03125, children_user=0.0, children_system=0.0)
+create_time:1535703968.0
+cwd:C:\Program Files (x86)\Google\Chrome\Application\68.0.3440.106
+exe:C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+io_counters:pio(read_count=124, write_count=146, read_bytes=65779369, write_bytes=21280, other_count=339, other_bytes=10544)
+memory_info:pmem(rss=20004864, vms=13611008, num_page_faults=6637, peak_wset=20004864, wset=20004864, peak_paged_pool=418600, paged_pool=406448, peak_nonpaged_pool=28736, nonpaged_pool=23792, pagefile=13611008, peak_pagefile=14684160, private=13611008)
+memory_percent:0.11727385823069669
+name:chrome.exe
+num_threads:17
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.140625, system=0.109375, children_user=0.0, children_system=0.0)
+create_time:1535704562.0
+cwd:None
+exe:None
+io_counters:pio(read_count=0, write_count=0, read_bytes=0, write_bytes=0, other_count=769, other_bytes=11910)
+memory_info:pmem(rss=10780672, vms=6225920, num_page_faults=3969, peak_wset=11636736, wset=10780672, peak_paged_pool=99896, paged_pool=99104, peak_nonpaged_pool=13688, nonpaged_pool=10936, pagefile=6225920, peak_pagefile=7102464, private=6225920)
+memory_percent:0.06319917994741886
+name:audiodg.exe
+num_threads:6
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1, 2, 3, 4, 5, 6, 7]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.015625, system=0.03125, children_user=0.0, children_system=0.0)
+create_time:1535704804.0
+cwd:C:\Windows\system32
+exe:C:\Windows\System32\taskhostw.exe
+io_counters:pio(read_count=0, write_count=0, read_bytes=0, write_bytes=0, other_count=70, other_bytes=410)
+memory_info:pmem(rss=6897664, vms=1396736, num_page_faults=1782, peak_wset=6942720, wset=6897664, peak_paged_pool=103592, paged_pool=103368, peak_nonpaged_pool=10320, nonpaged_pool=9240, pagefile=1396736, peak_pagefile=1556480, private=1396736)
+memory_percent:0.04043594948003547
+name:taskhostw.exe
+num_threads:6
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:None
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.0, system=0.0, children_user=0.0, children_system=0.0)
+create_time:1535704949.0
+cwd:None
+exe:None
+io_counters:pio(read_count=363, write_count=0, read_bytes=7414, write_bytes=0, other_count=116, other_bytes=3968)
+memory_info:pmem(rss=8482816, vms=2908160, num_page_faults=2493, peak_wset=8503296, wset=8482816, peak_paged_pool=97608, paged_pool=97592, peak_nonpaged_pool=12080, nonpaged_pool=11264, pagefile=2908160, peak_pagefile=2961408, private=2908160)
+memory_percent:0.049728534069568564
+name:SearchFilterHost.exe
+num_threads:4
+status:running
+username:None
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.203125, system=0.234375, children_user=0.0, children_system=0.0)
+create_time:1535705011.0
+cwd:F:\atom\Sytem_demo\process_ctl
+exe:C:\Python36\python3.exe
+io_counters:pio(read_count=538, write_count=10, read_bytes=5114953, write_bytes=83758, other_count=9835, other_bytes=714430)
+memory_info:pmem(rss=33325056, vms=260280320, num_page_faults=21591, peak_wset=33574912, wset=33325056, peak_paged_pool=327368, paged_pool=327192, peak_nonpaged_pool=28608, nonpaged_pool=24912, pagefile=260280320, peak_pagefile=260481024, private=260280320)
+memory_percent:0.19536038299855615
+name:python3.exe
+num_threads:11
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+
+connections:[]
+cpu_affinity:[0, 1]
+cpu_percent:0.0
+cpu_times:pcputimes(user=0.0, system=0.015625, children_user=0.0, children_system=0.0)
+create_time:1535705011.0
+cwd:C:\Windows
+exe:C:\Windows\System32\conhost.exe
+io_counters:pio(read_count=0, write_count=0, read_bytes=0, write_bytes=0, other_count=50, other_bytes=606)
+memory_info:pmem(rss=9261056, vms=10469376, num_page_faults=2334, peak_wset=9261056, wset=9261056, peak_paged_pool=162480, paged_pool=162256, peak_nonpaged_pool=8144, nonpaged_pool=8144, pagefile=10469376, peak_pagefile=10469376, private=10469376)
+memory_percent:0.05429078490163908
+name:conhost.exe
+num_threads:4
+status:running
+username:DESKTOP-9S6VIUF\Administrator
+****************************************************************************************************
+

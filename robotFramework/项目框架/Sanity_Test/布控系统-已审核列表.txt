@@ -1,0 +1,17 @@
+*** Settings ***
+Suite Setup       login
+Suite Teardown    logout
+Test Setup
+Test Teardown     进入主界面
+Resource          ../share_resourse.txt
+
+*** Test Cases ***
+查询
+    进入系统模块    xpath=//*[@id="menu_1305030918504367a63fdc4d5033ea81"]/p/a
+    进入子菜单模块    xpath=//*[@id="1308200923424680ac6ff5562215f70b"]/a
+    进入frame    id=content-frame
+    文本框输入    carPlateNum    陕B12345
+    Select From List By Value    carPlateColorCode    2    #蓝色
+    点击按钮    xpath=//*[@id="content_body"]/div[2]/div[1]/form/table/tbody/tr/td[9]/input[1]
+    ${platenum}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[2]
+    Run Keyword If    "${platenum}"=="陕B12345"    log    查询成功

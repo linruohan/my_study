@@ -1,0 +1,83 @@
+[GROUP1]
+host1 = host1
+ip1 = 10.1.2.3
+username1 = root
+password1 = 123456
+host2 = host2
+ip2 = 10.1.2.2
+username2 = user1
+password2 = 123456
+host3 = host3
+ip3 = 10.1.2.7
+username3 = user2
+password3 = 123456
+
+
+
+[GROUP2]
+host1 = host1
+ip1 = 10.1.2.1
+username1 = root
+password1 = 123456
+host2 = host2
+ip2 = 10.1.2.2
+username2 = root
+password2 = 123456
+host3 = host3
+ip3 = 10.1.2.3
+username3 = root
+password3 = 123456
+
+
+[GROUP3]
+host1 = host1
+ip1 = 10.1.2.1
+username1 = root
+password1 = 123456
+host2 = host2
+ip2 = 10.1.2.2
+username2 = root
+password2 = 123456
+host3 = host3
+ip3 = 10.1.2.3
+username3 = root
+password3 = 123456
+host4 = host4
+ip4 = 10.1.2.4
+username4 = root
+password4 = 123456
+host5 = host5
+ip5 = 10.1.2.5
+username5 = root
+password5 = 123456
+
+
+[GROUP4]
+host1 = host1
+ip1 = 10.1.2.1
+username1 = root
+password1 = 123456
+host2 = host2
+ip2 = 10.1.2.2
+username2 = root
+password2 = 123456
+host3 = host3
+ip3 = 10.1.2.3
+username3 = root
+password3 = 123456
+host4 = host4
+ip4 = 10.1.2.4
+username4 = root
+password4 = 123456
+host5 = host5
+ip5 = 10.1.2.5
+username5 = root
+password5 = 123456
+host6 = host6
+ip6 = 10.1.2.6
+username6 = root
+password6 = 123456
+host7 = host7
+ip7 = 10.1.2.7
+username7 = root
+password7 = 123456

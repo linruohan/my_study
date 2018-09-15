@@ -1,0 +1,95 @@
+*** Settings ***
+Suite Setup       login
+Suite Teardown    logout
+Test Setup
+Test Teardown     进入主界面
+Resource          ../share_resourse.txt
+
+*** Test Cases ***
+卡口设备-设备添加
+    进入系统模块    xpath=//*[@id="menu_1304261304150253833622fa401af96b"]/p/a
+    进入子菜单模块    xpath=//*[@id="130502094519328f815bc3af1d635903"]/a
+    进入frame    id=content-frame
+    点击元素    id=tree-rec_4_span
+    Comment    获取添加前记录数
+    进入frame    name=myIframe
+    ${num1}    获取元素文本数值    xpath=//*[@id="content_body"]/div/div/div[2]/b[3]
+    退出frame
+    进入frame    id=content-frame
+    Comment    开始添加
+    点击按钮    id=addImg
+    进入frame    name=myIframe
+    点击元素    id=orgNames
+    点击元素    id=orgTreeSpace_3_span
+    点击按钮    xpath=//*[@id="tab1"]/div[1]/table/tbody/tr[3]/td[2]/div/button
+    点击元素    xpath=//*[@id="dropdown-ul"]/li[2]
+    文本框输入    id=name    测试添加设备名称
+    sleep    1
+    点击元素    xpath=//*[@id="deviceTypeNames"]
+    sleep    1
+    点击元素    id=dtTreeSpace_2_span
+    点击元素    id=dtTreeSpace_12_span
+    文本框输入    id=pattern    111111111111
+    点击link    xpath=//*[@id="inputForm"]/ul/li[2]/a
+    文本框输入    id=ip    sj ip
+    文本框输入    timeout    60
+    点击link    xpath=//*[@id="inputForm"]/ul/li[3]/a
+    点击元素    id=directionCode_01
+    Select From List By Value    id=select01    2
+    点击link    xpath=//*[@id="inputForm"]/ul/li[4]/a
+    点击link    xpath=//*[@id="companyId_chzn"]/a
+    点击元素    id=companyId_chzn_o_2
+    滚动条到底部
+    退出frame
+    进入frame    id=content-frame
+    进入frame    name=myIframe
+    点击按钮    xpath=//*[@id="submit_btn"]    #id=submit_btn
+    退出frame
+    进入frame    id=content-frame
+    进入frame    name=myIframe
+    ${num2}    获取元素文本数值    xpath=//*[@id="content_body"]/div/div/div[2]/b[3]
+    Comment    Run Keyword If    ${num1}==${num2}    log    添加成功
+    验证数值加1    ${num1}    ${num2}
+
+卡口设备-设备查询
+    进入系统模块    xpath=//*[@id="menu_1304261304150253833622fa401af96b"]/p/a
+    进入子菜单模块    xpath=//*[@id="130502094519328f815bc3af1d635903"]/a
+    进入frame    id=content-frame
+    文本框输入    s_name    测试添加设备名称
+    点击元素    xpath=//*[@id="content_body"]/div[4]/div[1]/form/table/tbody/tr[2]/td[8]/input[1]
+    进入frame    name=myIframe
+    ${name}=    获取元素文本信息    xpath=//*[@id="rowcount0"]/td[2]
+    Run Keyword If    '${name}'=='测试添加设备名称'    log    查询成功
+
+卡口设备-设备修改
+    进入系统模块    xpath=//*[@id="menu_1304261304150253833622fa401af96b"]/p/a
+    进入子菜单模块    xpath=//*[@id="130502094519328f815bc3af1d635903"]/a
+    进入frame    id=content-frame
+    文本框输入    s_name    测试添加设备名称
+    点击元素    xpath=//*[@id="content_body"]/div[4]/div[1]/form/table/tbody/tr[2]/td[8]/input[1]
+    进入frame    name=myIframe
+    ${name}=    获取元素文本信息    xpath=//*[@id="rowcount0"]/td[2]
+    Run Keyword If    '${name}'=='测试添加设备名称'    修改卡口设备名称并验证    id=name    修改后的测试添加设备名称
+    ...    ELSE    log    未找到该设备
+
+卡口设备-设备查看
+    进入系统模块    xpath=//*[@id="menu_1304261304150253833622fa401af96b"]/p/a
+    进入子菜单模块    xpath=//*[@id="130502094519328f815bc3af1d635903"]/a
+    进入frame    id=content-frame
+    文本框输入    s_name    修改后的测试添加设备名称
+    点击元素    xpath=//*[@id="content_body"]/div[4]/div[1]/form/table/tbody/tr[2]/td[8]/input[1]
+    进入frame    name=myIframe
+    ${name}=    获取元素文本信息    xpath=//*[@id="rowcount0"]/td[2]
+    Run Keyword If    '${name}'=='修改后的测试添加设备名称'    查看卡口设备信息并验证    id=name    修改后的测试添加设备名称
+    ...    ELSE    log    未找到该设备
+
+卡口设备-设备删除
+    进入系统模块    xpath=//*[@id="menu_1304261304150253833622fa401af96b"]/p/a
+    进入子菜单模块    xpath=//*[@id="130502094519328f815bc3af1d635903"]/a
+    进入frame    id=content-frame
+    文本框输入    s_name    修改后的测试添加设备名称
+    点击元素    xpath=//*[@id="content_body"]/div[4]/div[1]/form/table/tbody/tr[2]/td[8]/input[1]
+    进入frame    name=myIframe
+    ${name}=    获取元素文本信息    xpath=//*[@id="rowcount0"]/td[2]
+    Run Keyword If    '${name}'=='修改后的测试添加设备名称'    删除卡口设备信息并验证    修改后的测试添加设备名称
+    ...    ELSE    log    删除失败

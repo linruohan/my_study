@@ -1,0 +1,133 @@
+*** Settings ***
+Documentation     GUI_keywords ：关键字文件
+...
+...               这两个文件中存储关键字，是RIDE实现关键字驱动部分。关键字是因为业务需求进行二次封闭。
+Resource          share_resourse.txt
+
+*** Keywords ***
+GUI_open browser
+    [Arguments]    ${browser}=%{U_CUSTOME_BROWSER_TYPE}
+    log    ${browser}
+    #browser type
+    open browser    %{G_PROD_DOMAIN_NAME}    ${browser}
+    Maximize Browser Window
+
+打开浏览器输入URL
+    [Arguments]    ${url}
+    Open Browser    ${url}    chrome
+    Maximize Browser Window
+    Set Browser Implicit Wait    10    #设置隐式等待
+    log    Get Title    #获取当前窗口标题
+
+登录
+    [Arguments]    ${url}=http://193.169.100.249:8086/itmsld/login    ${username}=admin    ${password}=admin
+    打开浏览器输入URL    ${url}
+    文本框输入    id=username    ${username}
+    文本框输入    id=password    ${password}
+    click button    //*[@id="loginForm"]/div[4]/input[1]
+    确认登录成功
+    log    登录成功
+
+确认登录成功
+    Element Text Should Be    //*[@id="dropdown-toggle"]/span[1]    超级管理员
+
+登出
+    unselect frame
+    click element    xpath=//*[@id="dropdown-toggle"]/span[2]
+    sleep    1
+    click link    xpath=//*[@id="dropdown-menu"]/li[2]/a
+    sleep    2
+    退出浏览器
+    log    登出成功
+
+退出浏览器
+    Close Browser
+    Comment    Close All Browsers
+    Close Driver    chrome
+
+关闭当前打开的弹出窗口
+    Close Window
+
+退出所有窗口
+    Close All Browsers
+
+点击按钮
+    [Arguments]    ${t}
+    Wait Until Page Contains Element    ${t}    3    erro='错误：element is \ not visable'
+    ${t1}    Get Value    ${t}
+    Click Button    ${t}
+    log    ${t1}
+
+点击link
+    [Arguments]    ${t}
+    Wait Until Page Contains Element    ${t}    3    erro='错误：element is \ not visable'
+    ${t1}    get text    ${t}
+    click link    ${t}
+    log    ${t1}
+
+点击元素
+    [Arguments]    ${t}
+    Wait Until Page Contains Element    ${t}    3    erro='错误：element is \ not visable'
+    ${t1}    get text    ${t}
+    click element    ${t}
+    log    ${t1}
+
+文本框输入
+    [Arguments]    ${t}    ${t1}
+    Wait Until Page Contains Element    ${t}    3    erro='错误：element is \ not visable'
+    Clear Element Text    ${t}
+    input text    ${t}    ${t1}
+
+去掉只读属性
+    [Arguments]    ${t}
+    Execute Javascript    document.getElementById("${t}").removeAttribute("readonly");
+
+输入日期
+    [Arguments]    ${t}    ${t1}
+    Execute JavaScript    document.getElementById("${t}").removeAttribute("readonly");
+    Clear Element Text    ${t}
+    input text    ${t}    ${t1}
+    sleep    1
+
+进入frame
+    [Arguments]    ${locator}
+    Select Frame    ${locator}
+    sleep    1
+
+退出frame
+    Unselect Frame
+
+元素聚焦
+    [Arguments]    ${t}
+    Set Focus To Element    ${t}
+    ${t1}    get WebElement    ${t}
+    Execute JavaScript    "arguments[0].scrollIntoView();", ${t1}
+
+获取元素文本信息
+    [Arguments]    ${t}
+    ${t1}=    get text    ${t}
+    log    ${t1}
+    [Return]    ${t1}
+
+获取元素文本数值
+    [Arguments]    ${t}
+    ${t1}    get text    ${t}
+    ${num}    evaluate    int(${t1})
+    [Return]    ${num}
+
+验证数值加1
+    [Arguments]    ${num1}    ${num2}
+    ${num3}    Evaluate    ${num2}-${1}
+    log    ${num1},${num3}
+    Should Be Equal As Integers    ${num1}    ${num3}
+
+验证数值减1
+    [Arguments]    ${num1}    ${num2}
+    ${num3}    Evaluate    ${num2}+${1}
+    log    ${num1},${num3}
+    Should Be Equal As Integers    ${num1}    ${num3}
+
+字符串相等
+    [Arguments]    ${t1}    ${t2}
+    Should Be Equal As Strings    ${t1}    ${t2}
+    [Return]    ${true}

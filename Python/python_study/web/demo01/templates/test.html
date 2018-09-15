@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <select id="selectSport" ruanat="server">
+    <option selected="selected" value="0" disabled="false">请选择</option>
+    <option value="篮球">篮球 </option>
+    <option value="足球">足球 </option>
+    </select>
+
+ <div class="wrap">
+        <div class="nice-select" name="nice-select">
+            <input type="text" value="==选择省份==" readonly>
+            <ul>
+                <li data-value="1">湖北省</li>
+                <li data-value="2">广东省</li>
+                <li data-value="3">湖南省</li>
+                <li data-value="4">四川省</li>
+            </ul>
+        </div>
+        <div class="h20">
+        </div>
+        <div class="nice-select" name="nice-select">
+            <input type="text" value="==选择城市==" readonly>
+            <ul>
+                <li data-value="1">武汉市</li>
+                <li data-value="2">深圳市</li>
+                <li data-value="3">长沙市</li>
+                <li data-value="4">成都市</li>
+            </ul>
+        </div>
+        <div class="h20">
+        </div>
+        <div class="nice-select" name="nice-select">
+            <input type="text" value="==选择区县==" readonly>
+            <ul>
+                <li data-value="1">蔡甸区</li>
+                <li data-value="2">南山区</li>
+                <li data-value="3">雨花区</li>
+                <li data-value="4">武侯区</li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+        $('[name="nice-select"]').click(function (e) {
+            $('[name="nice-select"]').find('ul').hide();
+            $(this).find('ul').show();
+            e.stopPropagation();
+        });
+        $('[name="nice-select"] li').hover(function (e) {
+            $(this).toggleClass('on');
+            e.stopPropagation();
+        });
+        $('[name="nice-select"] li').click(function (e) {
+            var val = $(this).text();
+            var dataVal = $(this).attr("data-value");
+            $(this).parents('[name="nice-select"]').find('input').val(val);
+            $('[name="nice-select"] ul').hide();
+            e.stopPropagation();
+            alert("中文值是：" + val);
+            alert("数字值是：" + dataVal);
+            //alert($(this).parents('[name="nice-select"]').find('input').val());
+        });
+        $(document).click(function () {
+            $('[name="nice-select"] ul').hide();
+        });
+    </script>
+</body>
+</html>

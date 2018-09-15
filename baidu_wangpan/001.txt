@@ -1,0 +1,9 @@
+https://openapi.baidu.com/oauth/2.0/login_success#expires_in=2592000&access_token=23.1d4b3bfd3b724392eb7f67a39539b55f.2592000.1538536378.706257630-238347&session_secret=c3099f420cace3cda69b2114ee80bc54&session_key=9mtqVMSoWhw3t0qFY2vmY180HJDpMuZu8ib3B09t4wliaA%2BH3rYZp6gX7zPznRe8GMW40x7m7E4MyigexLSr%2F3VqgSM0R5A%3D&scope=basic+netdisk
+
+
+
+curl -k -L -F "file=@/usr/local/dbbak/dsideal_db-2015-11-21=03:00:02.sql.gz" "https://c.pcs.baidu.com/rest/2.0/pcs/file?method=upload&access_token=23.1d4b3bfd3b724392eb7f67a39539b55f.2592000.1538536378.706257630-238347&path=/apps/pcstest_oauth/test/data.gz"
+
+
+
+curl -k -L -F "file=@D:\1.jpg" "https://c.pcs.baidu.com/rest/2.0/pcs/file?method=upload&access_token=23.1d4b3bfd3b724392eb7f67a39539b55f.2592000.1538536378.706257630-238347&path=/1.jpg"

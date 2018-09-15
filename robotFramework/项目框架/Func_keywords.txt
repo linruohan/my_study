@@ -1,0 +1,38 @@
+*** Settings ***
+Documentation     func_keywords ：关键字文件
+...
+...               这两个文件中存储关键字，是RIDE实现关键字驱动部分。关键字是因为业务需求进行二次封闭。
+Library           MyLibrary
+Resource          share_resourse.txt
+
+*** Keywords ***
+Fetch_Orders_frome_file
+    Run Add    1    2
+    log    123
+
+login
+    [Arguments]    ${url}=http://193.169.100.249:8086/itmsld/login    ${username}=admin    ${password}=admin
+    登录    ${url}    ${username}    ${password}
+
+logout
+    登出
+
+进入系统模块
+    [Arguments]    ${t}
+    Wait Until Page Contains Element    ${t}    3    erro='错误：element is \ not visable'
+    click link    ${t}
+    ${t1}    get text    ${t}
+    log    ${t1}
+    sleep    1
+
+进入子菜单模块
+    [Arguments]    ${t}
+    Wait Until Page Contains Element    ${t}    3    erro='错误：element is \ not visable'
+    click link    ${t}
+    ${t1}    get text    ${t}
+    log    ${t1}
+
+进入主界面
+    unselect frame
+    点击元素    xpath=//*[@id="main-interface"]/a
+    sleep    1

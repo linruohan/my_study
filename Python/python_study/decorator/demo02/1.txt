@@ -1,0 +1,71 @@
+@summary：验证器
+该模块提供一个装饰器用于验证参数是否合法，使用方法是：
+
+from validator import validParam,nullOk,multiType
+
+@validParam(i=int)
+def foo(i):
+    return i+1
+
+编写验证器：
+1、仅验证类型：
+@validParam(type,...)
+例如：
+检查第一个位置的参数是否为int类型：
+@validParam(int)
+检查名为x的参数是否为int类型：
+@validParam(x=int)
+
+验证多个参数：
+@validParam(int, int)
+指定参数名验证：
+@validParam(int, s=str)
+
+针对*和**参数编写的验证器将验证这些参数实际包含的每个元素：
+@validParam(varargs=int)
+def foo(*varargs): pass
+
+@validParam(kws=int)
+def foo7(s, **kws): pass
+
+2. 带有条件的验证：
+@validParam((type, condition), ...)
+其中，condition是一个表达式字符串，使用x引用待验证的对象；
+根据bool(表达式的值)判断是否通过验证，若计算表达式时抛出异常，视为失败。
+例如：
+验证一个10到20之间的整数：
+@validParam(i=(int, '10<x<20'))
+验证一个长度小于20的字符串：
+@validParam(s=(str, 'len(x)<20'))
+验证一个年龄小于20的学生：
+@validParam(stu=(Student, 'x.age<20'))
+
+另外，如果类型是字符串，condition还可以使用斜杠开头和结尾表示正则表达式匹配。
+验证一个由数字组成的字符串：
+@validParam(s=(str, '/^\d*$/'))
+
+3. 以上验证方式默认为当值是None时验证失败。如果None是合法的参数，可以使用nullOk()。
+nullOk()接受一个验证条件作为参数。
+例如：
+@validParam(i=nullOk(int))
+@validParam(i=nullOk((int, '10<x<20')))
+也可以简写为：
+@validParam(i=nullOk(int, '10<x<20'))
+
+4. 如果参数有多个合法的类型，可以使用multiType()。
+multiType()可接受多个参数，每个参数都是一个验证条件。
+例如：
+@validParam(s=multiType(int, str))
+@validParam(s=multiType((int, 'x>20'), nullOk(str, '/^\d+$/')))
+
+5. 如果有更复杂的验证需求，还可以编写一个函数作为验证函数传入。
+这个函数接收待验证的对象作为参数，根据bool(返回值)判断是否通过验证，抛出异常视为失败。
+例如：
+def validFunction(x):
+    return isinstance(x, int) and x>0
+@validParam(i=validFunction)
+def foo(i): pass
+
+这个验证函数等价于：
+@validParam(i=(int, 'x>0'))
+def foo(i): pass

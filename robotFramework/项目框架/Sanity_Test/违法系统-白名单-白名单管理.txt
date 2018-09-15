@@ -1,0 +1,123 @@
+*** Settings ***
+Suite Setup       login
+Suite Teardown    logout
+Test Setup
+Test Teardown     进入主界面
+Resource          ../share_resourse.txt
+
+*** Test Cases ***
+添加白名单
+    [Documentation]    "${chepai}"=="陕CJ7216" and "${color}"=="蓝色" and "${bumen}"=="测试部门" and "${vio}"=="启用" and "${black}"=="启用" and "${cross}"=="启用"
+    进入系统模块    xpath=//*[@id="menu_130619095023993fa6f0e33461840c4b"]/p/a
+    进入子菜单模块    xpath=//*[@id="130904154952125082d5a9e45d9061e1"]/a
+    进入frame    id=content-frame
+    点击按钮    xpath=//*[@id="content_body"]/div[3]/div[2]/div[1]/div[1]/button[1]
+    sleep    2
+    文本框输入    platenum    陕CJ7216    #号牌号码
+    Comment    号牌颜色
+    点击元素    xpath=//*[@id="plateColorCode_chzn"]/a/span
+    sleep    1
+    点击元素    xpath=//*[@id="plateColorCode_chzn_o_3"]    #蓝色
+    Comment    号牌类型
+    点击元素    xpath=//*[@id="inputForm"]/div/table/tbody/tr[2]/td[4]/div/a/span    #xpath=//*[@id="selSE0_chzn"]/a/span
+    sleep    1
+    点击元素    xpath=//*[@id="inputForm"]/div/table/tbody/tr[2]/td[4]/div/div/ul/li[3]    #小型车辆
+    文本框输入    deptname    测试部门
+    点击元素    isvio    #违法启用
+    点击元素    isblank    #布控启用
+    点击元素    iscross    #卡口启用
+    点击按钮    xpath=//*[@id="inputForm"]/div[2]/button    #保存
+    sleep    2
+    ${chepai}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[2]
+    ${color}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[4]
+    ${bumen}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[5]
+    ${vio}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[7]/font
+    ${black}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[8]/font
+    ${cross}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[9]/font
+    Run Keyword If    "${chepai}"=="陕CJ7216" and "${color}"=="蓝色" and "${bumen}"=="测试部门" and "${vio}"=="启用" and "${black}"=="启用" and "${cross}"=="启用"    log    添加成功
+
+修改白名单
+    [Documentation]    "${chepai1}"=="陕CJ7216" and "${color1}"=="蓝色" and "${bumen1}"=="测试部门修改后"
+    进入系统模块    xpath=//*[@id="menu_130619095023993fa6f0e33461840c4b"]/p/a
+    进入子菜单模块    xpath=//*[@id="130904154952125082d5a9e45d9061e1"]/a
+    进入frame    id=content-frame
+    文本框输入    platenum    陕CJ7216
+    Select From List By Value    platetypecode    02    #小型汽车号牌
+    文本框输入    deptname    测试部门
+    Select From List By Value    plateColorCode    2    #蓝色
+    点击按钮    xpath=//*[@id="content_body"]/div[3]/div[1]/form/table/tbody/tr/td[9]/input[1]
+    ${chepai}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[2]
+    ${color}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[4]
+    ${bumen}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[5]
+    Run Keyword If    "${chepai}"=="陕CJ7216" and "${color}"=="蓝色" and "${bumen}"=="测试部门"     log    查询成功
+    点击元素    xpath=//*[@id="tbody"]/tr[1]/td[10]/a[2]    #点击修改
+    sleep    1
+    文本框输入    deptname    测试部门修改后
+    sleep    4
+    点击按钮    xpath=//*[@id="inputForm"]/div[2]/button    #保存
+    退出frame
+    进入frame    id=content-frame
+    sleep    1
+    文本框输入    platenum    陕CJ7216
+    Select From List By Value    platetypecode    02    #小型汽车号牌
+    文本框输入    deptname    测试部门修改后
+    Select From List By Value    plateColorCode    2    #蓝色
+    sleep    1
+    点击按钮    xpath=//*[@id="content_body"]/div[4]/div[1]/form/table/tbody/tr/td[9]/input[1]
+    ${chepai1}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[2]
+    ${color1}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[4]
+    ${bumen1}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[5]
+    Run Keyword If    "${chepai1}"=="陕CJ7216" and "${color1}"=="蓝色" and "${bumen1}"=="测试部门修改后"     log    修改成功
+
+查看白名单
+    进入系统模块    xpath=//*[@id="menu_130619095023993fa6f0e33461840c4b"]/p/a
+    进入子菜单模块    xpath=//*[@id="130904154952125082d5a9e45d9061e1"]/a
+    进入frame    id=content-frame
+    文本框输入    platenum    陕CJ7216
+    Select From List By Value    platetypecode    02    #小型汽车号牌
+    文本框输入    deptname    测试部门修改后
+    Select From List By Value    plateColorCode    2    #蓝色
+    点击按钮    xpath=//*[@id="content_body"]/div[3]/div[1]/form/table/tbody/tr/td[9]/input[1]
+    点击元素    xpath=//*[@id="tbody"]/tr[1]/td[10]/a[1]
+    ${text}    获取元素文本信息    xpath=//*[@id="inputForm"]/div[1]/table/tbody/tr[2]/td[2]
+    Run Keyword If     "${text}"=="测试部门修改后"     log    查看成功
+
+查询白名单
+    进入系统模块    xpath=//*[@id="menu_130619095023993fa6f0e33461840c4b"]/p/a
+    进入子菜单模块    xpath=//*[@id="130904154952125082d5a9e45d9061e1"]/a
+    进入frame    id=content-frame
+    文本框输入    platenum    陕CJ7216
+    Select From List By Value    platetypecode    02    #小型汽车号牌
+    文本框输入    deptname    测试部门
+    Select From List By Value    plateColorCode    2    #蓝色
+    点击按钮    xpath=//*[@id="content_body"]/div[3]/div[1]/form/table/tbody/tr/td[9]/input[1]
+    ${chepai}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[2]
+    ${color}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[4]
+    ${bumen}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[5]
+    Run Keyword If    "${chepai}"=="陕CJ7216" and "${color}"=="蓝色" and "${bumen}"=="测试部门"     log    查询成功
+
+删除白名单
+    进入系统模块    xpath=//*[@id="menu_130619095023993fa6f0e33461840c4b"]/p/a
+    进入子菜单模块    xpath=//*[@id="130904154952125082d5a9e45d9061e1"]/a
+    进入frame    id=content-frame
+    文本框输入    platenum    陕CJ7216
+    Select From List By Value    platetypecode    02    #小型汽车号牌
+    文本框输入    deptname    测试部门修改后
+    Select From List By Value    plateColorCode    2    #蓝色
+    点击按钮    xpath=//*[@id="content_body"]/div[3]/div[1]/form/table/tbody/tr/td[9]/input[1]
+    点击元素    xpath=//*[@id="tbody"]/tr[1]/td[10]/a[1]
+    ${chepai1}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[2]
+    ${color1}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[4]
+    ${bumen1}    获取元素文本信息    xpath=//*[@id="tbody"]/tr[1]/td[5]
+    Run Keyword If    "${chepai1}"=="陕CJ7216" and "${color1}"=="蓝色" and "${bumen1}"=="测试部门修改后"     log    修改成功
+    点击元素    xpath=//*[@id="tbody"]/tr[1]/td[10]/a[3]
+    Handle Alert    action=ACCEPT
+    退出frame
+    进入frame    id=content-frame
+    文本框输入    platenum    陕CJ7216
+    Select From List By Value    platetypecode    02    #小型汽车号牌
+    文本框输入    deptname    测试部门修改后
+    Select From List By Value    plateColorCode    2    #蓝色
+    点击按钮    xpath=//*[@id="content_body"]/div[3]/div[1]/form/table/tbody/tr/td[9]/input[1]
+    ${num}    获取元素文本数值    xpath=//*[@id="content_body"]/div[3]/div[2]/div[3]/b[3]
+    Run Keyword If    ${num}==0    log    删除成功

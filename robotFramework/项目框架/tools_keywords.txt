@@ -1,0 +1,214 @@
+*** Settings ***
+Resource          share_resourse.txt
+
+*** Keywords ***
+滚动条到顶部
+    Comment    滚动条到底部
+    unselect frame
+    Execute JavaScript    document.body.scrollTop=100000
+
+滚动条到底部
+    Comment    滚动条到底部
+    unselect frame
+    Execute Javascript    window.scrollTo(0,document.body.scrollHeight);
+
+输入路径
+    Choose File    locator, file_path
+
+返回URL
+    Get Location    返回当前的浏览器URL。
+    Get Locations    返回并记录所有已知浏览器窗口的URL。
+
+page
+    Page Should Contain    页面应该包含
+    Page Should Contain Button    页面应该包含按钮
+    Page Should Contain Checkbox    页面应该包含复选框
+    Page Should Contain Element    页面应该包含元素
+    Page Should Contain Image    页面应该包含图像
+    Page Should Contain Link    页面应该包含链接
+    Page Should Contain List    页面应该包含列表
+    Page Should Contain Radio Button    页面应该包含单选按钮
+    Page Should Contain Textfield    页面应该包含文本字段
+    Page Should Not Contain    页面不应该包含
+    Page Should Not Contain Button    页面不应该包含按钮
+    Page Should Not Contain Checkbox    页面不应该包含复选框
+    Page Should Not Contain Element    页面不应包含元素
+    Page Should Not Contain Image    页面不应该包含图像
+    Page Should Not Contain Link    页面不应包含链接
+    Page Should Not Contain List    页面不应包含列表
+    Page Should Not Contain Radio Button    页面不应包含单选按钮
+    Page Should Not Contain Textfield    页面不应包含文本字段
+
+返回当前url的页面html源代码
+    Get Source
+
+列表
+    Get List Items
+    Get Selected List Label
+    Get Selected List Labels
+    Get Selected List Value
+    Get Selected List Values
+    List Selection Should Be    验证选择列表locator中expected选择了选项。
+    List Should Have No Selections    验证选择列表locator没有选择选项。
+    Radio Button Should Be Set To    单选按钮应该设置为
+    Radio Button Should Not Be Selected    单选按钮不应被选中
+    Select All From List    从列表中选择全部
+    Select Checkbox    选择复选框
+    Select Radio Button    选择单选按钮
+    Select From List By Value
+    Select From List By Label
+    Select From List By Index
+    Unselect All From List    从列表中取消选择全部
+    Unselect Checkbox    取消选中复选框
+    Unselect Frame    取消选择相框
+    Unselect From List    从列表中取消选择
+    Unselect From List By Index    按索引取消选择列表
+    Unselect From List By Label    通过标签取消选择列表
+    Unselect From List By Value    取消选择按值列表
+
+截图
+    Capture Page Screenshot    filename=selenium-screenshot-{index}.png
+    File Should Exist    ${OUTPUTDIR}/selenium-screenshot-1.png
+    ${path} =    Capture Page Screenshot
+    File Should Exist    ${OUTPUTDIR}/selenium-screenshot-2.png
+    File Should Exist    ${path}
+    Capture Page Screenshot    custom_name.png
+    File Should Exist    ${OUTPUTDIR}/custom_name.png
+    Capture Page Screenshot    custom_with_index_{index}.png
+    File Should Exist    ${OUTPUTDIR}/custom_with_index_1.png
+    Capture Page Screenshot    formatted_index_{index:03}.png
+    File Should Exist    ${OUTPUTDIR}/formatted_index_001.png
+    Set Screenshot Directory    设置捕获的屏幕截图的目录
+
+wait
+    Wait For Condition    等待条件    condition, timeout=None,error=None
+    Wait Until Element Contains    等到元素包含    locator, text, timeout=None,error=None
+    Wait Until Element Does Not Contain    等到元素不包含    locator, text, timeout=None,error=None
+    Wait Until Element Is Enabled    等到元素被启用    locator, timeout=None, error=None
+    Wait Until Element Is Not Visible    等到元素不可见为止    locator, timeout=None, error=None
+    Wait Until Element Is Visible    等到元素可见为止    locator, timeout=None, error=None
+    Wait Until Page Contains    等到页面包含    text, timeout=None, error=None
+    Wait Until Page Contains Element    等到页面包含元素    locator, timeout=None, error=None
+    Wait Until Page Does Not Contain    等到页面不包含    text, timeout=None, error=None
+    Wait Until Page Does Not Contain Element    等到页面不包含元素    locator, timeout=None, error=None
+
+should
+    Element Should Be Disabled
+    Element Should Be Enabled
+    Element Should Be Focused
+    Element Should Be Visible
+    Element Should Contain
+    Element Should Not Be Visible
+    Element Should Not Contain
+    Element Text Should Be
+    Checkbox Should Be Selected    \    #复选框应该被选中
+    Checkbox Should Not Be Selected    \    #复选框不应被选中
+    Table Cell Should Contain    locator, row, column, expected,loglevel=INFO    表格单元应包含
+    Table Column Should Contain    locator, column, expected,loglevel=INFO    表列应包含
+    Table Footer Should Contain    locator, expected, loglevel=INFO    表页脚应包含
+    Table Header Should Contain    locator, expected, loglevel=INFO    表头应该包含
+    Table Row Should Contain    locator, row, expected,loglevel=INFO    表行应包含
+    Table Should Contain    locator, expected, loglevel=INFO    表应该包含
+    Textarea Should Contain    locator, expected, message=None    Textarea应该包含
+    Textarea Value Should Be    locator, expected, message=None    Textarea的价值应该是
+    Textfield Should Contain    locator, expected, message=None    文本字段应该包含
+    Textfield Value Should Be    locator, expected, message=None    文本字段值应该是
+    Title Should Be    title    标题应该是
+
+alert
+    Handle Alert
+    Handle Alert    action=DISMISS
+    Handle Alert    timeout=10 s
+    Handle Alert    DISMISS
+    ${message} =    Handle Alert
+    ${message} =    Handle Alert
+    log    Get Alert Message
+    Alert Should Be Present
+    Alert Should Not Be Present
+
+click
+    Click Link
+    Click Button
+    Click Element
+    Click Element At Coordinates    locator, xoffset, yoffset
+    Click Image
+    #模拟用户按键确定的元素locator。    \ \    \ \    \ \    locator, key
+    Press Key    text_field    q
+    Press Key    text_field    abcde
+    Press Key    login_button    \\13    # ASCII code for enter key
+
+文本验证
+    [Arguments]    ${xpath}    ${result}    ${t}
+    Wait Until Page Contains Element \ \ \    ${xpath} \ \    60 \ \ \ \    未定位到元素
+    ${x}=    get text \ \    ${xpath} \ \
+    \ \ \ should contain \    ${result}    \ \ \ ${x} \
+
+获取元素相关
+    Get WebElement
+    Get WebElements
+    Get Element Attribute
+    Get Element Count
+    Get Element Size
+    Get Text
+    Get Value
+    Get Table Cell    locator, row, column, loglevel=INFO
+    Input Password    输入密码
+    Input Text \ \    输入文本
+    Input Text Into Alert    输入文本到警报
+    Input Text Into Prompt    输入文本到提示
+
+鼠标
+    Mouse Down    鼠标向下
+    Mouse Down On Image    鼠标放在图像上
+    Mouse Down On Link    鼠标在链接上
+    Mouse Out    鼠标移出
+    Mouse Over    鼠标移到
+    Mouse Up    鼠标向上
+
+窗口句柄
+    Get Window Handles
+    Get Window Identifiers    返回并记录所有已知浏览器窗口的ID属性。
+    Get Window Names    返回并记录所有已知浏览器窗口的名称。
+    Get Window Position    返回当前窗口位置。
+    Get Window Size    以整数形式返回当前窗口的宽度和高度。    ${width}    ${height}=    Get Window Size
+    Get Window Titles    返回并记录所有已知浏览器窗口的标题。
+    Go Back    模拟用户点击浏览器上的后退按钮。
+    Go To    将活动浏览器实例导航到提供的url。
+    #选择窗口
+    Select Window
+    Click Link    popup1    \    # Open new window
+    Select Window    example    \    # Select window using default strategy
+    Title Should Be    Pop-up 1
+    Click Button    popup2    \    # Open another window
+    ${handle} =    Select Window    NEW    # Select latest opened window
+    Title Should Be    Pop-up 2
+    Select Window    ${handle}    \    # Select window using handle
+    Title Should Be    Pop-up 1
+    Select Window    MAIN    \    # Select the main window
+    Title Should Be    Main
+    ${excludes} =    Get Window Handles    \    # Get list of current windows
+    Click Link    popup3    \    # Open one more window
+    Select Window    ${excludes}    \    # Select window using excludes
+    Title Should Be    Pop-up 3
+    Set Window Position
+    Set Window Size
+
+执行脚本
+    #执行脚本
+    Execute JavaScript    window.myFunc('arg1', 'arg2')
+    Execute JavaScript    ${CURDIR}/js_to_execute.js
+    ${sum} =    Execute JavaScript    return 1 + 1;
+    Should Be Equal    ${sum}    ${2}
+    Assign Id To Element \ \    xpath=.//*[@id='endTime'] \ \ \    endTime
+    \ \ \ Execute Javascript \ \ \    window.document.getElementById('endTime').value='2018-03-09'
+    #执行异步脚本
+    Execute Async JavaScript    var callback = arguments[arguments.length - 1]; window.setTimeout(callback, 2000);
+    Execute Async JavaScript    ${CURDIR}/async_js_to_execute.js
+    ${result} =    Execute Async JavaScript    var callback = arguments[arguments.length - 1];    function answer(){callback("text");};    window.setTimeout(answer, 2000);
+    Should Be Equal    ${result}    text
+
+select
+    [Arguments]    ${value}
+    Select From List By Value    ${value}
+    Select From List By Label    ${value}
+    Select From List By Index    ${value}

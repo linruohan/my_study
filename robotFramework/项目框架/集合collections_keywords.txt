@@ -1,0 +1,53 @@
+*** Settings ***
+Library           Collections
+
+*** Keywords ***
+集合
+    Append To List    list_, *values    附加到列表
+    Append To List    ${L1}    xxx
+    Append To List    ${L2}    x    y    z
+    Combine Lists    *lists    组合列表
+    ${x} =    Combine List    ${L1}    ${L2}
+    ${y} =    Combine List    ${L1}    ${L2}    ${L1}
+    Convert To Dictionary    item    转换为字典
+    Convert To List    item    转换为列表
+    Copy Dictionary    dictionary    复制字典
+    Copy List    list_    复制列表
+    Count Values In List    list_, value, start=0, end=None    在列表中计数值
+    ${x} =    Count Values In List    ${L3}    b
+    Dictionaries Should Be Equal    dict1, dict2, msg=None,values=True    字典应该是平等的
+    Dictionary Should Contain Item    dictionary, key, value, msg=None    字典应包含项目
+    Dictionary Should Contain Key    dictionary, key, msg=None    字典应该包含关键字
+    Dictionary Should Contain Sub Dictionary    dict1, dict2, msg=None,values=True    字典应包含子字典
+    Dictionary Should Contain Value    dictionary, value, msg=None    字典应该包含价值
+    Dictionary Should Not Contain Key    dictionary, key, msg=None    字典不应包含关键字
+    Dictionary Should Not Contain Value    dictionary, value, msg=None    字典不应该包含价值
+    Get Dictionary Items    dictionary    获取字典项目
+    Get Dictionary Keys    dictionary    获取字典密钥
+    Get Dictionary Values    dictionary    获取字典值
+    Get From Dictionary    dictionary, key    从字典获取某一个值
+    Get From List    list_, index    从列表中获取
+    Get Index From List    list_, value, start=0, end=None    从列表中获取索引
+    Get Match Count    list, pattern,case_insensitive=False,whitespace_insensitive=False    获得匹配计数
+    Get Matches    list, pattern,case_insensitive=False,whitespace_insensitive=False    获得比赛
+    Get Slice From List    list_, start=0, end=None    从列表中获取切片
+    Insert Into List    list_, index, value    插入到列表中
+    Keep In Dictionary    dictionary, *keys    保持在字典中
+    List Should Contain Sub List    list1, list2, msg=None,values=True    列表应包含子列表
+    List Should Contain Value    list_, value, msg=None    名单应该包含价值
+    List Should Not Contain Duplicates    list_, msg=None    列表不应包含重复项
+    List Should Not Contain Value    list_, value, msg=None    名单不应该包含价值
+    Lists Should Be Equal    list1, list2, msg=None,values=True, names=None    列表应该是平等的
+    Log Dictionary    dictionary, level=INFO    日志字典
+    Log List    list_, level=INFO    日志列表
+    Pop From Dictionary    dictionary, key, default=    从词典删除
+    Remove Duplicates    list_    删除重复项
+    Remove From Dictionary    dictionary, *keys    从字典中删除    删除给定keys的dictionary。
+    Remove From List    list_, index    从列表中删除    删除并返回用indexfrom 指定的值list。
+    Remove Values From List    list_, *values    从列表中删除值    删除的给予所有出现values的list。
+    Reverse List    list_    反转给定的列表。
+    Set List Value    list_, index, value    设置列表值
+    Set To Dictionary    dictionary, *key_value_pairs,**items    设置为词典
+    Should Contain Match    list, pattern, msg=None,case_insensitive=False,whitespace_insensitive=False    应该包含匹配
+    Should Not Contain Match    list, pattern, msg=None,case_insensitive=False,whitespace_insensitive=False    不应该包含匹配
+    Sort List    list_    排序列表

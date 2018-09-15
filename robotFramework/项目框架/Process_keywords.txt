@@ -1,0 +1,76 @@
+*** Settings ***
+Library           MyLibrary
+Resource          share_resourse.txt
+
+*** Keywords ***
+添加卡口设备信息并验证
+    点击按钮    id=addImg
+    进入frame    name=myIframe
+    文本框输入    id=name    测试添加设备名称
+    sleep    1
+    点击元素    xpath=//*[@id="deviceTypeNames"]
+    sleep    1
+    点击元素    id=dtTreeSpace_2_span
+    点击元素    id=dtTreeSpace_12_span
+    文本框输入    id=pattern    111111111111
+    点击link    xpath=//*[@id="inputForm"]/ul/li[2]/a
+    文本框输入    id=ip    sj ip
+    文本框输入    timeout    60
+    点击link    xpath=//*[@id="inputForm"]/ul/li[3]/a
+    点击元素    id=directionCode_01
+    Select From List By Value    id=select01    2
+    点击link    xpath=//*[@id="inputForm"]/ul/li[4]/a
+    点击link    xpath=//*[@id="companyId_chzn"]/a
+    点击元素    id=companyId_chzn_o_2
+    滚动条到底部
+    退出frame
+    进入frame    id=content-frame
+    进入frame    name=myIframe
+    点击按钮    xpath=//*[@id="submit_btn"]    #id=submit_btn
+    退出frame
+    进入frame    id=content-frame
+    进入frame    name=myIframe
+    ${num2}    获取元素文本数值    xpath=//*[@id="content_body"]/div/div/div[2]/b[3]
+    Comment    Run Keyword If    ${num1}==${num2}    log    添加成功
+    验证数值加1    ${num1}    ${num2}
+
+修改卡口设备名称并验证
+    [Arguments]    ${locator}    ${name}
+    点击元素    xpath=//*[@id="rowcount0"]/td[9]/a[2]
+    文本框输入    ${locator}    ${name}
+    滚动条到底部
+    退出frame
+    进入frame    id=content-frame
+    进入frame    name=myIframe
+    点击按钮    xpath=//*[@id="submit_btn"]
+    退出frame
+    进入frame    id=content-frame
+    文本框输入    s_name    ${name}
+    点击元素    xpath=//*[@id="content_body"]/div[4]/div[1]/form/table/tbody/tr[2]/td[8]/input[1]
+    进入frame    name=myIframe
+    ${name2}=    获取元素文本信息    xpath=//*[@id="rowcount0"]/td[2]
+    Run Keyword If    '${name2}'=='${name}'    log    修改成功
+
+查看卡口设备信息并验证
+    [Arguments]    ${locator}    ${name}
+    点击元素    xpath=//*[@id="rowcount0"]/td[9]/a[1]
+    ${name2}=    获取元素文本信息    xpath=//*[@id="content_body"]/div[2]/div[1]/table[1]/tbody/tr[1]/td[4]
+    Run Keyword If    '${name2}'=='${name}'    log    查看成功
+    滚动条到底部
+    退出frame
+    进入frame    id=content-frame
+    进入frame    name=myIframe
+    点击按钮    xpath=//*[@id="cancel_btn"]
+
+删除卡口设备信息并验证
+    [Arguments]    ${name}
+    点击元素    xpath=//*[@id="rowcount0"]/td[9]/a[3]
+    Handle Alert    action=ACCEPT
+    Comment    Run Keyword If    '${message}'=='删除后数据将无法恢复，确定要删除吗？'
+    退出frame
+    进入frame    id=content-frame
+    文本框输入    s_name    ${name}
+    点击元素    xpath=//*[@id="content_body"]/div[4]/div[1]/form/table/tbody/tr[2]/td[8]/input[1]
+    进入frame    name=myIframe
+    ${name2}=    获取元素文本信息    xpath=//*[@id="content_body"]/div/div/div[2]/b[3]
+    Run Keyword If    '${name2}'=='0'    log    删除成功

@@ -1,0 +1,17 @@
+*** Keywords ***
+转换大小写
+    #转换成小写
+    ${str1} =    Convert To Lowercase    ABC
+    ${str2} =    Convert To Lowercase    1A2c3D
+    Should Be Equal    ${str1}    abc
+    Should Be Equal    ${str2}    1a2c3d
+    #转换成大写
+    ${str1} =    Convert To Uppercase    abc
+    ${str2} =    Convert To Uppercase    1a2C3d
+    Should Be Equal    ${str1}    ABC
+    Should Be Equal    ${str2}    1A2C3D
+
+解码decode
+    #使用给定的解码给定bytes的Unicode字符串encoding。
+    ${string} =    Decode Bytes To String    ${bytes}    UTF-8
+    ${string} =    Decode Bytes To String    ${bytes}    ASCII    errors=ignore

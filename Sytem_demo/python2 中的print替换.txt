@@ -1,0 +1,4 @@
+正则：
+
+print ([a-zA-Z:\"\", \-\().]+)
+python2 中的print替换

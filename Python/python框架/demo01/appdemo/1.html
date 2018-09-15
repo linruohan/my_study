@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>l;information</h1>
+        <p>hello,{{name}}</p>
+
+        <ul>
+            {% for item in itemlist %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+
+        {% if status %}
+            <p>i like python!</p>
+        {% else %}
+            <p>i like django</p>
+        {% endif %}
+
+
+        {% ifequal a b %}
+        {% endifequal %}
+
+        {{ name | upper }}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

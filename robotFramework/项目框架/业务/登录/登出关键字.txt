@@ -1,0 +1,10 @@
+*** Settings ***
+Resource          ../../share_resourse.txt
+
+*** Keywords ***
+点击超级管理员
+    unselect frame
+    点击元素    xpath=//*[@id="dropdown-toggle"]/span[2]
+
+点击安全退出
+    点击link    xpath=//*[@id="dropdown-menu"]/li[2]/a
